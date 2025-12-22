@@ -9,7 +9,6 @@ import CallHistory from "./pages/CallHistory";
 import ScoringReport from "./pages/ScoringReport";
 import Settings from "./pages/Settings";
 import FeaturePage from "./pages/FeaturePage";
-import AICoaching from "./pages/AICoaching";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,8 +25,6 @@ const App = () => (
           <Route path="/history" element={<CallHistory />} />
           <Route path="/report/:id" element={<ScoringReport />} />
           <Route path="/settings" element={<Settings />} />
-          {/* AI Coaching dedicated page */}
-          <Route path="/solutions/ai-coaching" element={<AICoaching />} />
           {/* Dynamic feature pages */}
           <Route path="/solutions/:slug" element={<FeaturePage />} />
           <Route path="/resources/:slug" element={<FeaturePage />} />
