@@ -429,87 +429,85 @@ export default function Landing() {
             </p>
           </div>
 
-          {/* Philosophy Cards */}
-          <div className="grid md:grid-cols-2 gap-8 mb-20">
+          {/* Philosophy Cards + Key Features - 3 Column Layout */}
+          <div className="grid md:grid-cols-3 gap-6 mb-20">
             {/* Elite Athletes Card */}
-            <div className="bg-white rounded-xl p-8 border-2 border-slate-200 shadow-sm">
-              <h3 className="text-xl font-bold text-slate-800 italic mb-4">
+            <div className="bg-white rounded-xl p-6 border-2 border-slate-200 shadow-sm">
+              <h3 className="text-lg font-bold text-slate-800 italic mb-4">
                 Elite Athletes Don't Just "Do Their Job" to Improve
               </h3>
-              <p className="text-slate-600 mb-4">They:</p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-blue-600 shrink-0" />
-                  <span className="text-slate-700">Practice specific skills repeatedly</span>
+              <p className="text-slate-600 mb-3">They:</p>
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0" />
+                  <span className="text-sm text-slate-700">Practice specific skills repeatedly</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-blue-600 shrink-0" />
-                  <span className="text-slate-700">Get immediate, expert feedback</span>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0" />
+                  <span className="text-sm text-slate-700">Get immediate, expert feedback</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-blue-600 shrink-0" />
-                  <span className="text-slate-700">Train in realistic but low-stakes environments</span>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0" />
+                  <span className="text-sm text-slate-700">Train in realistic but low-stakes environments</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-blue-600 shrink-0" />
-                  <span className="text-slate-700">Build muscle memory through repetition</span>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0" />
+                  <span className="text-sm text-slate-700">Build muscle memory through repetition</span>
                 </div>
               </div>
             </div>
 
             {/* Sales Reps Card */}
-            <div className="bg-white rounded-xl p-8 border-2 border-slate-200 shadow-sm">
-              <h3 className="text-xl font-bold text-slate-800 mb-4">
+            <div className="bg-white rounded-xl p-6 border-2 border-slate-200 shadow-sm">
+              <h3 className="text-lg font-bold text-slate-800 mb-4">
                 Sales Reps Should Train the Same Way
               </h3>
-              <p className="text-slate-600 mb-4">ApexLoop provides:</p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-orange-500 shrink-0" />
-                  <span className="text-slate-700">Unlimited AI roleplay = <span className="font-semibold">Repetitive practice</span></span>
+              <p className="text-slate-600 mb-3">ApexLoop provides:</p>
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0" />
+                  <span className="text-sm text-slate-700">Unlimited AI roleplay = <span className="font-semibold">Repetitive practice</span></span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-orange-500 shrink-0" />
-                  <span className="text-slate-700">Instant AI feedback = <span className="font-semibold">Expert coaching</span></span>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0" />
+                  <span className="text-sm text-slate-700">Instant AI feedback = <span className="font-semibold">Expert coaching</span></span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-orange-500 shrink-0" />
-                  <span className="text-slate-700">Real scenarios, zero risk = <span className="font-semibold">Safe training environment</span></span>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0" />
+                  <span className="text-sm text-slate-700">Real scenarios, zero risk = <span className="font-semibold">Safe training environment</span></span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-orange-500 shrink-0" />
-                  <span className="text-slate-700">Data-driven insights = <span className="font-semibold">Measurable progress</span></span>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-orange-500 shrink-0" />
+                  <span className="text-sm text-slate-700">Data-driven insights = <span className="font-semibold">Measurable progress</span></span>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Key Features Header */}
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-blue-800 uppercase tracking-wide mb-2">
-              KEY FEATURES
-            </h2>
-            <p className="text-lg font-bold text-orange-500 uppercase tracking-wide">
-              Turn Calls Into Coaching Moments
-            </p>
-          </div>
-
-          {/* Key Features List */}
-          <div className="space-y-4 max-w-2xl mx-auto mb-20">
-            <div className="bg-orange-500 text-white font-bold text-lg py-4 px-8 rounded-lg text-center shadow-md">
-              Real-time Voice Roleplays
-            </div>
-            <div className="bg-white text-orange-500 font-bold text-lg py-4 px-8 rounded-lg text-center border-2 border-orange-200 shadow-sm">
-              Multilingual Support
-            </div>
-            <div className="bg-orange-500 text-white font-bold text-lg py-4 px-8 rounded-lg text-center shadow-md">
-              High-fidelity Customer Personas
-            </div>
-            <div className="bg-white text-orange-500 font-bold text-lg py-4 px-8 rounded-lg text-center border-2 border-orange-200 shadow-sm">
-              Conversation Quality Scoring
-            </div>
-            <div className="bg-orange-500 text-white font-bold text-lg py-4 px-8 rounded-lg text-center shadow-md">
-              Objection Handling & Key Talk Tracks
+            {/* Key Features Card */}
+            <div className="bg-white rounded-xl p-6 border-2 border-orange-300 shadow-sm">
+              <h3 className="text-lg font-black text-blue-800 uppercase tracking-wide text-center mb-1">
+                KEY FEATURES
+              </h3>
+              <p className="text-sm font-bold text-orange-500 uppercase tracking-wide text-center mb-4">
+                Turn Calls Into Coaching Moments
+              </p>
+              <div className="space-y-2">
+                <div className="bg-orange-500 text-white font-semibold text-sm py-2 px-4 rounded-md text-center">
+                  Real-time Voice Roleplays
+                </div>
+                <div className="bg-white text-orange-500 font-semibold text-sm py-2 px-4 rounded-md text-center border border-orange-200">
+                  Multilingual Support
+                </div>
+                <div className="bg-orange-500 text-white font-semibold text-sm py-2 px-4 rounded-md text-center">
+                  High-fidelity Customer Personas
+                </div>
+                <div className="bg-white text-orange-500 font-semibold text-sm py-2 px-4 rounded-md text-center border border-orange-200">
+                  Conversation Quality Scoring
+                </div>
+                <div className="bg-orange-500 text-white font-semibold text-sm py-2 px-4 rounded-md text-center">
+                  Objection Handling & Key Talk Tracks
+                </div>
+              </div>
             </div>
           </div>
 
