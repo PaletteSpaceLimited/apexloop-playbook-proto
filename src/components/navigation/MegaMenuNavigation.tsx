@@ -259,7 +259,7 @@ export default function MegaMenuNavigation() {
               </Button>
             </a>
             <Link to="/contact">
-              <Button variant="ghost" size="sm" className="text-body hover:text-heading">
+              <Button size="sm" className="gradient-primary-bg hover:opacity-90 text-primary-foreground border-0">
                 Book a demo
               </Button>
             </Link>
