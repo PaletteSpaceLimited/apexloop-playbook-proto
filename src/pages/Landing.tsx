@@ -524,7 +524,7 @@ export default function Landing() {
       </section>
 
       {/* Product Capabilities Section */}
-      <section className="py-24 px-6 bg-section-light">
+      <section className="py-12 px-6 bg-section-light">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-sm font-bold text-accent uppercase tracking-widest mb-4">The ApexLoop System</p>
