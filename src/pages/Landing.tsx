@@ -40,7 +40,7 @@ const productCapabilities = [{
 
 // Updated stats from pitch deck
 const stats = [{
-  value: "50,000+",
+  value: "30+",
   label: "Roleplays Completed"
 }, {
   value: "40%",
