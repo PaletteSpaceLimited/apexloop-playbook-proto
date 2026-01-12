@@ -30,7 +30,7 @@ export default function QADealAssessment() {
             QA & <span className="text-orange-500">Performance Diagnostics</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl whitespace-nowrap">
             100% Call QA: From "Random Sampling Blind Spots" to <span className="text-foreground font-semibold">"Total Data Visibility"</span>
           </p>
 
