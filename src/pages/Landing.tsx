@@ -280,9 +280,9 @@ export default function Landing() {
         <div className="absolute inset-0 bg-gradient-to-b from-cyan/5 to-transparent pointer-events-none" />
 
         <div className="relative max-w-6xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent mb-8">
-            <Zap className="w-4 h-4" />
-            <span className="font-medium text-xl">AI Sales Roleplays & Sales Coaching</span>
+          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-accent/10 text-accent mb-8">
+            <Zap className="w-6 h-6" />
+            <span className="font-medium text-2xl">AI Sales Roleplays & Sales Coaching</span>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-heading mb-6 leading-tight">
