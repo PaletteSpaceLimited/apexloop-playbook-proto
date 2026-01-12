@@ -10,7 +10,8 @@ import {
   ChevronUp,
   UserCheck,
   Clock,
-  TrendingUp
+  TrendingUp,
+  Handshake
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import MegaMenuNavigation from "@/components/navigation/MegaMenuNavigation";
@@ -19,26 +20,26 @@ import { useState } from "react";
 // Feature sections data
 const featureSections = [
   {
-    title: "Train Recruiters on Candidate Engagement",
-    description: "Help recruiters master the art of candidate conversations. AI-driven roleplays simulate real candidate interactions, from initial outreach to offer negotiations.",
+    title: "Master Candidate Engagement",
+    description: "AI-driven roleplays and scorecards help recruiters perfect their outreach, screening, and interview techniques with realistic candidate personas.",
     icon: MessageSquare,
     imagePosition: "right" as const
   },
   {
-    title: "Accelerate New Recruiter Onboarding",
-    description: "Get new recruiters productive faster with structured training paths, certification programs, and hands-on practice scenarios tailored to your recruitment methodology.",
+    title: "Accelerate Recruiter Onboarding",
+    description: "Get new recruiters productive in weeks, not months. Structured practice paths and certifications ensure consistent quality across your team.",
     icon: Clock,
     imagePosition: "left" as const
   },
   {
-    title: "Improve Client Relationship Skills",
-    description: "Train consultants to handle client objections, negotiate terms, and build lasting partnerships. Practice difficult conversations in a safe environment before facing real clients.",
-    icon: Users,
+    title: "Build Stronger Client Relationships",
+    description: "Train consultants on business development, requirement gathering, and relationship management with AI-powered client conversation simulations.",
+    icon: Handshake,
     imagePosition: "right" as const
   },
   {
-    title: "Standardize Quality Across Teams",
-    description: "Ensure consistent candidate experience across all recruiters. AI-powered coaching and scorecards help maintain high standards as your team scales.",
+    title: "Scale Quality Across Teams",
+    description: "Maintain consistent candidate experience as you grow. AI coaching and scorecards help standardize best practices across all recruiters.",
     icon: Award,
     imagePosition: "left" as const
   }

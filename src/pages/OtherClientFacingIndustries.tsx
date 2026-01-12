@@ -1,67 +1,50 @@
-import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { 
-  Users, 
-  Target, 
-  TrendingUp, 
+import {
+  ArrowRight,
+  UsersRound,
+  Users,
+  Target,
+  TrendingUp,
   Award,
   ChevronDown,
-  ArrowRight,
-  CheckCircle2
+  ChevronUp,
+  MessageSquare,
+  Globe,
+  Sparkles
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import MegaMenuNavigation from "@/components/navigation/MegaMenuNavigation";
 import { useState } from "react";
 
+// Feature sections data
 const featureSections = [
   {
     title: "Train Staff for Exceptional Client Interactions",
-    description: "Every client-facing role requires unique communication skills. ApexLoop's AI-powered roleplay simulates real client scenarios across industries—from hospitality to professional services—so your team can practice handling inquiries, complaints, and relationship-building conversations with confidence.",
-    icon: Users,
-    benefits: [
-      "Industry-specific conversation simulations",
-      "Practice handling difficult client situations",
-      "Build empathy and active listening skills",
-      "Instant feedback on communication effectiveness"
-    ],
+    description: "AI-driven roleplays simulate real client scenarios across industries—from hospitality to professional services—so your team can practice handling inquiries and building relationships.",
+    icon: MessageSquare,
     imagePosition: "right" as const
   },
   {
     title: "Accelerate Onboarding Across Diverse Roles",
-    description: "Whether you're onboarding customer service representatives, account managers, or client success specialists, ApexLoop provides consistent, scalable training that gets new hires productive faster while maintaining quality standards.",
+    description: "Whether onboarding customer service representatives, account managers, or client success specialists, ApexLoop provides consistent, scalable training that gets new hires productive faster.",
     icon: TrendingUp,
-    benefits: [
-      "Role-specific training pathways",
-      "Reduce time-to-competency by 50%",
-      "Consistent training quality at scale",
-      "Track individual progress and readiness"
-    ],
     imagePosition: "left" as const
   },
   {
     title: "Adapt to Industry-Specific Communication Needs",
-    description: "From legal compliance in financial conversations to emotional intelligence in healthcare settings, ApexLoop adapts to your industry's unique requirements. Create custom scenarios that reflect your specific client interactions and regulatory requirements.",
+    description: "From legal compliance in financial conversations to emotional intelligence in healthcare settings, ApexLoop adapts to your industry's unique requirements with customizable scenarios.",
     icon: Target,
-    benefits: [
-      "Customizable industry scenarios",
-      "Compliance-focused training modules",
-      "Cultural sensitivity training",
-      "Multi-language support for global teams"
-    ],
     imagePosition: "right" as const
   },
   {
     title: "Measure and Improve Client Experience",
-    description: "Transform your client experience through data-driven training improvements. ApexLoop's analytics identify skill gaps, track improvement over time, and correlate training performance with real-world client satisfaction metrics.",
+    description: "Transform your client experience through data-driven training improvements. ApexLoop's analytics identify skill gaps and correlate training performance with real-world satisfaction metrics.",
     icon: Award,
-    benefits: [
-      "Comprehensive performance analytics",
-      "Identify team-wide skill gaps",
-      "Link training to business outcomes",
-      "Continuous improvement recommendations"
-    ],
     imagePosition: "left" as const
   }
 ];
 
+// FAQ data
 const faqs = [
   {
     question: "What industries does ApexLoop support?",
@@ -82,14 +65,18 @@ const faqs = [
   {
     question: "What kind of support do you provide for implementation?",
     answer: "We offer comprehensive implementation support including dedicated customer success managers, custom scenario development, team training sessions, and ongoing optimization recommendations. Our goal is to ensure you see measurable improvements in client satisfaction and team performance."
+  },
+  {
+    question: "Does ApexLoop train on my data?",
+    answer: "No! ApexLoop AI does not train on your data. Our models are pre-trained on our own proprietary data sets. Your data and your clients' data remain secure and private."
   }
 ];
 
+// Stats data
 const stats = [
   { value: "60%", label: "Faster Skill Development" },
   { value: "45%", label: "Better Client Satisfaction" },
-  { value: "3x", label: "More Practice Opportunities" },
-  { value: "40%", label: "Reduced Training Costs" }
+  { value: "3x", label: "More Practice Opportunities" }
 ];
 
 export default function OtherClientFacingIndustries() {
@@ -97,72 +84,70 @@ export default function OtherClientFacingIndustries() {
 
   return (
     <div className="min-h-screen bg-background">
+      <MegaMenuNavigation />
+
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <Users className="w-4 h-4" />
-              Client-Facing Excellence
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Elevate Every Client Interaction with{" "}
-              <span className="text-primary">AI-Powered Training</span>
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              From hospitality to professional services, empower your client-facing teams with realistic practice scenarios that build confidence and drive exceptional experiences.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8" asChild>
-                <Link to="/contact">
-                  Get Started
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8" asChild>
-                <Link to="/contact">Request Demo</Link>
-              </Button>
-            </div>
+      <section className="py-20 px-6 text-center">
+        <div className="max-w-4xl mx-auto">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-6">
+            <UsersRound className="w-4 h-4" />
+            <span className="text-sm font-medium">Industry Solutions</span>
           </div>
+
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-heading mb-6">
+            Other Client-Facing Industries
+          </h1>
+
+          <p className="text-xl text-body mb-8 max-w-2xl mx-auto">
+            From hospitality to professional services, empower your client-facing teams with realistic practice scenarios that build confidence and drive exceptional experiences.
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
+            <a href="https://app.apexloopai.com/dashboard">
+              <Button size="lg" className="gradient-primary-bg hover:opacity-90 text-primary-foreground border-0">
+                Try free demo
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </a>
+            <Link to="/contact">
+              <Button variant="outline" size="lg">
+                Book a demo
+              </Button>
+            </Link>
+          </div>
+
+          <p className="text-sm text-muted-foreground">
+            No password or credit card required!
+          </p>
         </div>
       </section>
 
       {/* Feature Sections */}
-      {featureSections.map((section, index) => (
+      {featureSections.map((feature, index) => (
         <section 
           key={index} 
-          className={`py-20 ${index % 2 === 0 ? 'bg-muted/30' : 'bg-background'}`}
+          className={`py-16 px-6 ${index % 2 === 0 ? 'bg-white' : 'bg-section-light'}`}
         >
-          <div className="container mx-auto px-4">
-            <div className={`flex flex-col ${section.imagePosition === 'left' ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-12 items-center`}>
-              <div className="flex-1 space-y-6">
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/10">
-                  <section.icon className="w-7 h-7 text-primary" />
-                </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-                  {section.title}
+          <div className="max-w-6xl mx-auto">
+            <div className={`grid lg:grid-cols-2 gap-12 items-center ${
+              feature.imagePosition === 'left' ? 'lg:grid-flow-dense' : ''
+            }`}>
+              {/* Content */}
+              <div className={feature.imagePosition === 'left' ? 'lg:col-start-2' : ''}>
+                <h2 className="text-2xl md:text-3xl font-bold text-heading mb-4">
+                  {feature.title}
                 </h2>
-                <p className="text-lg text-muted-foreground">
-                  {section.description}
+                <p className="text-lg text-body leading-relaxed">
+                  {feature.description}
                 </p>
-                <ul className="space-y-3">
-                  {section.benefits.map((benefit, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-foreground">{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
-              <div className="flex-1">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl transform rotate-3" />
-                  <div className="relative bg-card border border-border rounded-3xl p-8 shadow-xl">
-                    <div className="aspect-video bg-muted rounded-xl flex items-center justify-center">
-                      <section.icon className="w-20 h-20 text-muted-foreground/30" />
-                    </div>
-                  </div>
+
+              {/* Visual placeholder */}
+              <div className={`bg-muted/50 rounded-2xl p-8 border border-border ${
+                feature.imagePosition === 'left' ? 'lg:col-start-1' : ''
+              }`}>
+                <div className="aspect-video bg-background rounded-lg flex items-center justify-center shadow-sm">
+                  <feature.icon className="w-16 h-16 text-primary/40" />
                 </div>
               </div>
             </div>
@@ -171,21 +156,13 @@ export default function OtherClientFacingIndustries() {
       ))}
 
       {/* Stats Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Proven Results Across Industries
-            </h2>
-            <p className="text-xl opacity-90 max-w-2xl mx-auto">
-              Organizations using ApexLoop see measurable improvements in client satisfaction and team performance.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <section className="py-16 px-6 bg-primary/5">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">{stat.value}</div>
-                <div className="text-sm md:text-base opacity-80">{stat.label}</div>
+              <div key={index} className="p-6">
+                <p className="text-4xl md:text-5xl font-bold text-primary mb-2">{stat.value}</p>
+                <p className="text-body">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -193,82 +170,79 @@ export default function OtherClientFacingIndustries() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
-              Frequently Asked Questions
-            </h2>
-            <div className="space-y-4">
-              {faqs.map((faq, index) => (
-                <div 
-                  key={index}
-                  className="border border-border rounded-xl overflow-hidden"
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-heading text-center mb-12">
+            Frequently Asked Questions
+          </h2>
+
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <div 
+                key={index} 
+                className="border border-border rounded-lg overflow-hidden"
+              >
+                <button
+                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                  className="w-full flex items-center justify-between p-5 text-left bg-background hover:bg-muted/50 transition-colors"
                 >
-                  <button
-                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                    className="w-full flex items-center justify-between p-6 text-left bg-card hover:bg-muted/50 transition-colors"
-                  >
-                    <span className="font-semibold text-foreground pr-4">{faq.question}</span>
-                    <ChevronDown 
-                      className={`w-5 h-5 text-muted-foreground flex-shrink-0 transition-transform ${
-                        openFaq === index ? 'rotate-180' : ''
-                      }`} 
-                    />
-                  </button>
-                  {openFaq === index && (
-                    <div className="px-6 pb-6 bg-card">
-                      <p className="text-muted-foreground">{faq.answer}</p>
-                    </div>
+                  <span className="font-semibold text-heading pr-4">{faq.question}</span>
+                  {openFaq === index ? (
+                    <ChevronUp className="w-5 h-5 text-primary shrink-0" />
+                  ) : (
+                    <ChevronDown className="w-5 h-5 text-muted-foreground shrink-0" />
                   )}
-                </div>
-              ))}
-            </div>
+                </button>
+                {openFaq === index && (
+                  <div className="px-5 pb-5 text-body bg-background">
+                    {faq.answer}
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Ready to Transform Your Client Experience?
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Join organizations across industries that are using ApexLoop to deliver exceptional client interactions and build lasting relationships.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8" asChild>
-                <Link to="/contact">
-                  Start Free Trial
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
+      <section className="py-20 px-6 bg-gradient-to-br from-primary/10 to-accent/10">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-heading mb-4">
+            Ready to try our AI roleplay?
+          </h2>
+          <p className="text-body mb-8 max-w-lg mx-auto">
+            Join organizations across industries that are using ApexLoop to deliver exceptional client interactions and build lasting relationships.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="https://app.apexloopai.com/dashboard">
+              <Button size="lg" className="gradient-primary-bg hover:opacity-90 text-primary-foreground border-0">
+                Try free demo
+                <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8" asChild>
-                <Link to="/contact">Talk to Sales</Link>
+            </a>
+            <Link to="/contact">
+              <Button variant="outline" size="lg">
+                Book a demo
               </Button>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-card border-t border-border">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="flex items-center gap-2">
-              <img src="/logo-s.png" alt="ApexLoop" className="h-8" />
-              <span className="font-bold text-xl">ApexLoop</span>
-            </div>
-            <div className="flex gap-8 text-sm text-muted-foreground">
-              <Link to="/pricing" className="hover:text-primary transition-colors">Pricing</Link>
-              <Link to="/contact" className="hover:text-primary transition-colors">Contact</Link>
-              <Link to="/partners" className="hover:text-primary transition-colors">Partners</Link>
-            </div>
-            <div className="text-sm text-muted-foreground">
-              © 2025 ApexLoop. All rights reserved.
-            </div>
+      <footer className="border-t border-border py-12 px-6 bg-background">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex items-center gap-2">
+            <img src="/logo-s.png" alt="ApexLoop Logo" className="w-8 h-8 object-contain" />
+            <span className="font-semibold text-heading">ApexLoop</span>
+          </div>
+          <p className="text-sm text-muted-foreground">
+            © 2025 Palette Space. All rights reserved.
+          </p>
+          <div className="flex items-center gap-6">
+            <a href="#" className="text-sm text-muted-foreground hover:text-heading transition-colors">Privacy</a>
+            <a href="#" className="text-sm text-muted-foreground hover:text-heading transition-colors">Terms</a>
+            <a href="https://palettespace.org" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-heading transition-colors">palettespace.org</a>
           </div>
         </div>
       </footer>

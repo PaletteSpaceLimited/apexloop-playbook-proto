@@ -19,14 +19,14 @@ import { useState } from "react";
 // Feature sections data
 const featureSections = [
   {
-    title: "Train Staff on Citizen & Stakeholder Engagement",
-    description: "Help public sector employees and NGO staff master difficult conversations with citizens, donors, and stakeholders. Practice handling complaints, explaining policies, and building trust.",
+    title: "Master Citizen & Stakeholder Engagement",
+    description: "AI-driven roleplays help staff practice difficult conversations with citizens, donors, and stakeholders. Build trust and handle complaints with confidence.",
     icon: Users,
     imagePosition: "right" as const
   },
   {
     title: "Ensure Consistent Service Delivery",
-    description: "Standardize communication quality across all touchpoints. AI-powered training ensures every staff member delivers the same high-quality service experience.",
+    description: "Standardize communication quality across all touchpoints with AI-powered training. Every staff member delivers the same high-quality experience.",
     icon: Scale,
     imagePosition: "left" as const
   },
