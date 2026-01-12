@@ -14,6 +14,7 @@ import ChangeManagement from "./pages/ChangeManagement";
 import PreCallPrep from "./pages/PreCallPrep";
 import QADealAssessment from "./pages/QADealAssessment";
 import PublicSpeaking from "./pages/PublicSpeaking";
+import SuccessStories from "./pages/SuccessStories";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,11 +37,12 @@ const App = () => (
           <Route path="/solutions/pre-call-prep" element={<PreCallPrep />} />
           <Route path="/solutions/qa-deal-assessment" element={<QADealAssessment />} />
           <Route path="/solutions/public-speaking" element={<PublicSpeaking />} />
+          {/* Dedicated pages */}
+          <Route path="/success-stories" element={<SuccessStories />} />
           {/* Dynamic feature pages */}
           <Route path="/solutions/:slug" element={<FeaturePage />} />
           <Route path="/resources/:slug" element={<FeaturePage />} />
           <Route path="/pricing" element={<FeaturePage />} />
-          <Route path="/success-stories" element={<FeaturePage />} />
           <Route path="/enterprise" element={<FeaturePage />} />
           <Route path="/careers" element={<FeaturePage />} />
           <Route path="*" element={<NotFound />} />
