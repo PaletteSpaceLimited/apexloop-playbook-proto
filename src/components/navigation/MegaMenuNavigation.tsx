@@ -92,7 +92,7 @@ export default function MegaMenuNavigation() {
         <div className="flex h-16 items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 mr-10">
-            <img src="/logo-s.png" alt="ApexLoop Logo" className="w-8 h-8 object-contain" />
+            <img src="/logo-s.png" alt="ApexLoop Logo" className="w-12 h-12 object-contain" />
             <span className="font-bold text-xl text-heading">ApexLoop</span>
           </Link>
 
