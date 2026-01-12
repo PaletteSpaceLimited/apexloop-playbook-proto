@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Zap, Bot, BarChart3, Target, ArrowRight, CheckCircle2, PlayCircle, Clock, TrendingDown, Users2, ChevronDown, ChevronUp, Quote, Twitter, Linkedin, Youtube, Headphones, MessageSquare, Award, Timer, DollarSign, UserX, RefreshCw, Globe, Mic, LineChart, Sparkles, MonitorPlay, Settings, BookOpen, Dumbbell, Trophy, User } from "lucide-react";
+import { Zap, Bot, BarChart3, Target, ArrowRight, CheckCircle2, PlayCircle, Clock, TrendingDown, Users2, ChevronDown, ChevronUp, Quote, Twitter, Linkedin, Youtube, Headphones, MessageSquare, Award, Timer, DollarSign, UserX, RefreshCw, Globe, Mic, LineChart, Sparkles, MonitorPlay, Settings, BookOpen, Dumbbell, Skull, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import MegaMenuNavigation from "@/components/navigation/MegaMenuNavigation";
 import { useState } from "react";
@@ -16,7 +16,7 @@ const athleteTraining = [
   { icon: MonitorPlay, label: "Watch game footage" },
   { icon: BookOpen, label: "Read playbooks" },
   { icon: Dumbbell, label: "Occasional practice", subLabel: "(if teammates are free)" },
-  { icon: Trophy, label: "Then compete in the Olympics", highlight: true }
+  { icon: Skull, label: "Then compete in the Olympics", highlight: true }
 ];
 
 // Product capabilities from pitch deck
