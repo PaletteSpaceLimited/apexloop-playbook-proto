@@ -222,52 +222,52 @@ const footerLinks = {
     external: true
   }, {
     label: "Integrations",
-    href: "/solutions/integrations"
+    href: "/contact"
   }, {
     label: "Pricing",
     href: "/pricing"
   }],
   company: [{
     label: "About Us",
-    href: "/about"
+    href: "/contact"
   }, {
     label: "Careers",
-    href: "/careers"
+    href: "/contact"
   }, {
     label: "Blog",
-    href: "/resources/blog"
+    href: "/contact"
   }, {
     label: "Press",
-    href: "/press"
+    href: "/contact"
   }, {
     label: "Contact",
     href: "/contact"
   }],
   legal: [{
     label: "Privacy Policy",
-    href: "/privacy"
+    href: "/contact"
   }, {
     label: "Terms of Service",
-    href: "/terms"
+    href: "/contact"
   }, {
     label: "Security",
-    href: "/security"
+    href: "/contact"
   }, {
     label: "GDPR",
-    href: "/gdpr"
+    href: "/contact"
   }],
   resources: [{
     label: "Documentation",
-    href: "/docs"
+    href: "/contact"
   }, {
     label: "API Reference",
-    href: "/api"
+    href: "/contact"
   }, {
     label: "Demos",
-    href: "/resources/demos"
+    href: "/contact"
   }, {
     label: "Community",
-    href: "/community"
+    href: "/contact"
   }]
 };
 export default function Landing() {
