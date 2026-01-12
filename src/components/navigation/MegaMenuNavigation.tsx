@@ -21,7 +21,14 @@ import {
   Handshake,
   ArrowRight,
   Menu,
-  X
+  X,
+  Shield,
+  UserCheck,
+  Laptop,
+  Briefcase,
+  GraduationCap as Education,
+  Landmark,
+  UsersRound
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -51,10 +58,13 @@ const useCaseItems = [
 ];
 
 const industryItems = [
-  { title: "B2B SaaS Software", slug: "b2b-saas-software", icon: Monitor },
-  { title: "B2B Sales Trainers & Agencies", slug: "b2b-sales-trainers-agencies", icon: School },
-  { title: "B2B Call Centers", slug: "b2b-call-centers", icon: Headphones },
-  { title: "Banking & Financial Advisors", slug: "banking-financial-advisors", icon: Building2 },
+  { title: "Insurance & Financial Services", slug: "insurance-financial-services", icon: Shield },
+  { title: "Customer Support & Success Teams", slug: "customer-support-success-teams", icon: UserCheck },
+  { title: "B2B SaaS & IT Solution Providers", slug: "b2b-saas-it-solution-providers", icon: Laptop },
+  { title: "Recruitment & Talent Consulting Firms", slug: "recruitment-talent-consulting-firms", icon: Briefcase },
+  { title: "Education & Training Providers", slug: "education-training-providers", icon: Education },
+  { title: "Public Sector & NGOs", slug: "public-sector-ngos", icon: Landmark },
+  { title: "Other Client-Facing Industries", slug: "other-client-facing-industries", icon: UsersRound },
 ];
 
 // Resources Menu Data
