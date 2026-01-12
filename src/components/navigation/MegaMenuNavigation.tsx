@@ -70,22 +70,10 @@ const industryItems = [
 // Resources Menu Data
 const resourceItems = [
   {
-    title: "Demos",
-    slug: "demos",
-    icon: PlayCircle,
-    description: "Watch how ApexLoop's state of the art AI roleplays work"
-  },
-  {
     title: "Blog",
     slug: "blog",
     icon: BookOpen,
     description: "Stay up to date with the latest in AI coaching"
-  },
-  {
-    title: "Competitions",
-    slug: "competitions",
-    icon: Trophy,
-    description: "Join our quarterly virtual competitions"
   },
   {
     title: "Partners",
