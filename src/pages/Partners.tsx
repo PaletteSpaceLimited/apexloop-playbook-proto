@@ -100,7 +100,7 @@ export default function Partners() {
       </section>
 
       {/* Media Exposure Section */}
-      <section className="py-16 px-6 bg-section-light">
+      <section className="py-16 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-heading text-center mb-12">
             MEDIA EXPOSURE
