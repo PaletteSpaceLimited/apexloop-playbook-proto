@@ -1,8 +1,23 @@
 import { Link } from "react-router-dom";
-import { Zap, Bot, BarChart3, Target, ArrowRight, CheckCircle2, PlayCircle, Clock, TrendingDown, Users2, ChevronDown, ChevronUp, Quote, Twitter, Linkedin, Youtube, Headphones, MessageSquare, Award, Timer, DollarSign, UserX, RefreshCw, Globe, Mic, LineChart, Sparkles } from "lucide-react";
+import { Zap, Bot, BarChart3, Target, ArrowRight, CheckCircle2, PlayCircle, Clock, TrendingDown, Users2, ChevronDown, ChevronUp, Quote, Twitter, Linkedin, Youtube, Headphones, MessageSquare, Award, Timer, DollarSign, UserX, RefreshCw, Globe, Mic, LineChart, Sparkles, MonitorPlay, Settings, BookOpen, Dumbbell, Trophy, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import MegaMenuNavigation from "@/components/navigation/MegaMenuNavigation";
 import { useState } from "react";
+
+// Training comparison data for Uncomfortable Truth section
+const traditionalTraining = [
+  { icon: MonitorPlay, label: "Watch instructional videos" },
+  { icon: Settings, label: "Read playbook documents" },
+  { icon: Users2, label: "Occasional roleplay", subLabel: "(if manager has time)" },
+  { icon: Clock, label: "Then dive straight into real calls" }
+];
+
+const athleteTraining = [
+  { icon: MonitorPlay, label: "Watch game footage" },
+  { icon: BookOpen, label: "Read playbooks" },
+  { icon: Dumbbell, label: "Occasional practice", subLabel: "(if teammates are free)" },
+  { icon: Trophy, label: "Then compete in the Olympics", highlight: true }
+];
 
 // Product capabilities from pitch deck
 const productCapabilities = [{
@@ -310,68 +325,86 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* The Uncomfortable Truth Section */}
-      <section className="py-24 px-6 bg-section-light">
+      {/* The Uncomfortable Truth Section - Hyperbound Style */}
+      <section className="py-24 px-6 bg-background">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-sm font-bold text-accent uppercase tracking-widest mb-4">The Uncomfortable Truth</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-heading mb-4">
-              We Train Sales Reps Like It's <span className="gradient-text">1995</span>
-            </h2>
-            <p className="text-body max-w-3xl mx-auto">
-              Imagine if we trained Olympic athletes this way... Watch videos, read playbooks, 
-              occasional practice—then compete in the Olympics. <span className="font-semibold">Sounds absurd, right?</span> 
-              But that's exactly how we train sales reps.
-            </p>
+          {/* Header with Logo */}
+          <div className="flex items-start justify-between mb-12">
+            <div>
+              <p className="text-sm font-bold text-slate-500 uppercase tracking-widest mb-3">THE UNCOMFORTABLE TRUTH:</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-3">
+                We Train Sales Reps Like It's 1995
+              </h2>
+              <p className="text-lg text-slate-600">
+                Imagine if we trained Olympic athletes this way...
+              </p>
+            </div>
+            <div className="hidden md:flex items-center gap-2">
+              <div className="w-8 h-8 rounded-lg gradient-primary-bg flex items-center justify-center">
+                <Zap className="w-4 h-4 text-white" />
+              </div>
+              <span className="font-bold text-slate-800">ApexLoop</span>
+            </div>
           </div>
 
-          {/* Comparison Grid */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-background rounded-2xl p-8 border border-border">
-              <h3 className="text-lg font-bold text-heading mb-6 flex items-center gap-2">
-                <span className="text-red-500">❌</span> Traditional Sales Training
-              </h3>
-              <ul className="space-y-3 text-body">
-                <li className="flex items-start gap-3">
-                  <span className="text-red-400">•</span>
-                  Watch instructional videos
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-400">•</span>
-                  Read playbook documents
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-400">•</span>
-                  Occasional roleplay (if manager has time)
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-400">•</span>
-                  Then dive straight into real calls
-                </li>
-              </ul>
+          {/* Traditional Sales Training Strip */}
+          <div className="bg-slate-200 rounded-lg px-6 py-3 mb-4">
+            <span className="font-semibold text-slate-700">Traditional Sales Training</span>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
+            {traditionalTraining.map((item, index) => (
+              <div key={index} className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 rounded-2xl bg-slate-100 flex items-center justify-center mb-3">
+                  <item.icon className="w-8 h-8 text-slate-500" />
+                </div>
+                <p className="text-sm font-medium text-slate-700">{item.label}</p>
+                {item.subLabel && (
+                  <p className="text-xs text-slate-500">{item.subLabel}</p>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* If Athletes Trained This Way Strip */}
+          <div className="bg-slate-200 rounded-lg px-6 py-3 mb-4">
+            <span className="font-semibold text-slate-700">If Athletes Trained This Way?!?!</span>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+            {athleteTraining.map((item, index) => (
+              <div key={index} className="flex flex-col items-center text-center">
+                <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-3 ${
+                  item.highlight ? 'bg-orange-100' : 'bg-slate-100'
+                }`}>
+                  <item.icon className={`w-8 h-8 ${
+                    item.highlight ? 'text-orange-500' : 'text-slate-500'
+                  }`} />
+                </div>
+                <p className={`text-sm font-medium ${
+                  item.highlight ? 'text-orange-600' : 'text-slate-700'
+                }`}>{item.label}</p>
+                {item.subLabel && (
+                  <p className="text-xs text-slate-500">{item.subLabel}</p>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Conclusion */}
+          <div className="flex items-center justify-between bg-slate-50 rounded-2xl p-8 border border-slate-200">
+            <div>
+              <p className="text-xl md:text-2xl font-bold text-slate-800 mb-1">
+                Sounds absurd, right?
+              </p>
+              <p className="text-2xl md:text-3xl font-bold text-slate-900">
+                But that's exactly how we train sales reps
+              </p>
             </div>
-            <div className="bg-accent/5 rounded-2xl p-8 border border-accent/20">
-              <h3 className="text-lg font-bold text-heading mb-6 flex items-center gap-2">
-                <span className="text-green-500">✓</span> Elite Athlete Training
-              </h3>
-              <ul className="space-y-3 text-body">
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                  Practice specific skills repeatedly
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                  Get immediate, expert feedback
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                  Train in realistic but low-stakes environments
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                  Build muscle memory through repetition
-                </li>
-              </ul>
+            <div className="hidden md:block">
+              <div className="w-20 h-20 rounded-full bg-slate-200 flex items-center justify-center">
+                <User className="w-10 h-10 text-slate-400" />
+              </div>
             </div>
           </div>
         </div>
