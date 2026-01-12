@@ -10,6 +10,7 @@ import ScoringReport from "./pages/ScoringReport";
 import Settings from "./pages/Settings";
 import FeaturePage from "./pages/FeaturePage";
 import OnboardingCertifications from "./pages/OnboardingCertifications";
+import ChangeManagement from "./pages/ChangeManagement";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/settings" element={<Settings />} />
           {/* Dedicated solution pages */}
           <Route path="/solutions/onboarding-certifications" element={<OnboardingCertifications />} />
+          <Route path="/solutions/change-management" element={<ChangeManagement />} />
           {/* Dynamic feature pages */}
           <Route path="/solutions/:slug" element={<FeaturePage />} />
           <Route path="/resources/:slug" element={<FeaturePage />} />
