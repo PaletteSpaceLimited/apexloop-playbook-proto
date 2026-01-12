@@ -349,10 +349,12 @@ export default function Landing() {
                     <span className="text-xs px-3 py-1 border border-accent text-accent rounded-full">High-Pressure</span>
                   </div>
                   <p className="text-sm text-body text-center mb-4">Best bot for practicing cold calls. Identify goals, address pain points, and evaluate compatibility effectively.</p>
-                  <Button className="w-full gradient-primary-bg text-white">
-                    <Phone className="w-4 h-4 mr-2" />
-                    Try it yourself
-                  </Button>
+                  <a href="https://app.apexloopai.com/dashboard" className="w-full">
+                    <Button className="w-full gradient-primary-bg text-white">
+                      <Phone className="w-4 h-4 mr-2" />
+                      Try it yourself
+                    </Button>
+                  </a>
                 </div>
                 
                 {/* Right - Video Player Mockup */}
