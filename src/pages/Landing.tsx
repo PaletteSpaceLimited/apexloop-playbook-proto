@@ -524,7 +524,7 @@ export default function Landing() {
       </section>
 
       {/* Product Capabilities Section */}
-      <section className="py-12 px-6 bg-section-light">
+      <section className="py-6 px-6 bg-section-light">
         <div className="max-w-6xl mx-auto">
 
           <div className="grid md:grid-cols-3 gap-8">
