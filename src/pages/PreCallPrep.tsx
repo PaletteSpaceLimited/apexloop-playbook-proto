@@ -129,7 +129,7 @@ export default function PreCallPrep() {
       <section className="py-16 px-6 bg-muted/30">
         <div className="max-w-6xl mx-auto">
           <div className="mb-4">
-            <span className="text-orange-500 font-bold text-lg">3# The Challenge:</span>
+            <span className="text-orange-500 font-bold text-lg">The Challenge:</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             SDRs Wasting 16 Hours on Pre-Call Research
