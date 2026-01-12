@@ -228,7 +228,7 @@ export default function OnboardingCertifications() {
           {/* The Challenge */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-orange-500 mb-4">
-              #1 The Challenge: New Agents Burning Out Before They Ramp
+              The Challenge: New Agents Burning Out Before They Ramp
             </h2>
             <p className="text-muted-foreground mb-6">
               Client: Hong Kong life insurance company · 50+ new agents/month · 3-month probation
