@@ -164,7 +164,7 @@ export default function OnboardingCertifications() {
             <div className="bg-orange-500 text-white rounded-t-xl px-6 py-3">
               <span className="font-bold">Traditional Onboarding</span>
             </div>
-            <div className="bg-orange-50 dark:bg-orange-950/20 border border-orange-200 dark:border-orange-800 border-t-0 rounded-b-xl p-6">
+            <div className="bg-background border border-border border-t-0 rounded-b-xl p-6">
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center">
