@@ -25,10 +25,6 @@ export default function QADealAssessment() {
       {/* Hero Section */}
       <section className="py-20 px-6 bg-gradient-to-br from-orange-50 to-background">
         <div className="max-w-5xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-100 text-orange-600 mb-6">
-            <Search className="w-4 h-4" />
-            <span className="text-sm font-medium">Scenario 4</span>
-          </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
             QA & <span className="text-orange-500">Performance Diagnostics</span>
