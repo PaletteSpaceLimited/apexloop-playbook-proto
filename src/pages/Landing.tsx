@@ -387,17 +387,6 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Social Proof - Logo Cloud */}
-      <section className="py-16 px-6 border-y border-border">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-center text-sm font-medium text-menu-header uppercase tracking-widest mb-8">
-            Trusted by leading revenue teams
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-12 opacity-60">
-            {logos.map(logo => <span key={logo} className="text-xl font-bold text-heading">{logo}</span>)}
-          </div>
-        </div>
-      </section>
 
       {/* The Uncomfortable Truth Section - Hyperbound Style */}
       <section className="py-24 px-6 bg-background">
