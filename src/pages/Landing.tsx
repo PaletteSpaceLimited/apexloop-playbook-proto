@@ -526,16 +526,6 @@ export default function Landing() {
       {/* Product Capabilities Section */}
       <section className="py-12 px-6 bg-section-light">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-sm font-bold text-accent uppercase tracking-widest mb-4">The ApexLoop System</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-heading mb-4">
-              Complete Sales <span className="gradient-text">Training Ecosystem</span>
-            </h2>
-            <p className="text-body max-w-2xl mx-auto">
-              Just like sports teams have practice facilities, game tape analysis, and coaching staff—
-              ApexLoop provides everything your sales team needs to perform at their best.
-            </p>
-          </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {productCapabilities.map(capability => <div key={capability.title} className="bg-background rounded-2xl p-8 border border-border hover:border-accent/40 transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-md">
