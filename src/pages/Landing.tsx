@@ -287,7 +287,14 @@ export default function Landing() {
             <span className="gradient-text">Like Elite Athletes</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-body max-w-3xl mx-auto mb-10">Elite athletes don't just "do their job" to improve. They practice specific skills repeatedly, get immediate feedback, and train in realistic but low-stakes environments. Your sales reps deserve the same.<span className="font-semibold text-heading"> Your sales reps deserve the same.</span>
+          <p className="text-lg md:text-xl text-body max-w-3xl mx-auto mb-10">
+            Elite athletes don't just "do their job" to improve.
+            <br />
+            They practice specific skills repeatedly, get immediate feedback,
+            <br />
+            and train in realistic but low-stakes environments.
+            <br />
+            <span className="font-semibold text-heading">Your sales reps deserve the same.</span>
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
