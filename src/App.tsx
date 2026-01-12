@@ -17,6 +17,7 @@ import PublicSpeaking from "./pages/PublicSpeaking";
 import SuccessStories from "./pages/SuccessStories";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
+import Partners from "./pages/Partners";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -43,6 +44,7 @@ const App = () => (
           <Route path="/success-stories" element={<SuccessStories />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/resources/partners" element={<Partners />} />
           {/* Dynamic feature pages */}
           <Route path="/solutions/:slug" element={<FeaturePage />} />
           <Route path="/resources/:slug" element={<FeaturePage />} />
