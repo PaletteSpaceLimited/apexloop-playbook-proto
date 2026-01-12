@@ -40,7 +40,6 @@ const productItems = [
   { title: "AI Real Call Scoring", slug: "ai-real-call-scoring", icon: BarChart3, description: "Score your actual calls", externalUrl: "https://app.apexloopai.com/dashboard/history" },
   { title: "AI Coaching", slug: "ai-coaching", icon: MessageSquare, description: "Personalized AI coaching" },
   { title: "AI Post-Sales Roleplays", slug: "ai-post-sales-roleplays", icon: HeadphonesIcon, description: "Customer success training" },
-  { title: "AI Roleplay Hiring Assessments", slug: "ai-roleplay-hiring-assessments", icon: ClipboardCheck, description: "Evaluate candidates" },
 ];
 
 const useCaseItems = [
