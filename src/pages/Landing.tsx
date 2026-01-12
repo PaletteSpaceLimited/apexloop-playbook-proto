@@ -3,6 +3,7 @@ import { Zap, Bot, BarChart3, Target, ArrowRight, CheckCircle2, PlayCircle, Cloc
 import { Button } from "@/components/ui/button";
 import MegaMenuNavigation from "@/components/navigation/MegaMenuNavigation";
 import { useState } from "react";
+import steveBrownImg from "@/assets/steve-brown.png";
 
 // Training comparison data for Uncomfortable Truth section
 const traditionalTraining = [
@@ -338,11 +339,11 @@ export default function Landing() {
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                     Book Rate 11.7%
                   </div>
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center overflow-hidden">
-                    <Users2 className="w-10 h-10 text-white" />
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-slate-200">
+                    <img src={steveBrownImg} alt="Steve Brown" className="w-full h-full object-cover" />
                   </div>
-                  <h4 className="text-lg font-bold text-heading text-center">Jordan Vega <span className="text-xs bg-accent text-white px-2 py-0.5 rounded-full ml-1">AI</span></h4>
-                  <p className="text-sm text-body text-center mb-4">CRO @ EchoFlow</p>
+                  <h4 className="text-lg font-bold text-heading text-center">Steve Brown <span className="text-xs bg-accent text-white px-2 py-0.5 rounded-full ml-1">AI</span></h4>
+                  <p className="text-sm text-body text-center mb-4">VP of Sales Operations @ SummitWorks</p>
                   <div className="flex justify-center gap-2 mb-4">
                     <span className="text-xs px-3 py-1 border border-accent text-accent rounded-full">Discovery Call</span>
                     <span className="text-xs px-3 py-1 border border-accent text-accent rounded-full">Nice</span>
