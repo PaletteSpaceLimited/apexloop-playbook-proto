@@ -97,7 +97,7 @@ export default function Contact() {
       <section className="py-12 px-6 bg-gradient-to-b from-primary/10 via-primary/5 to-background">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground">
-            Talk to Sales
+            Talk to Us
           </h1>
         </div>
       </section>
