@@ -241,16 +241,16 @@ export default function OnboardingCertifications() {
 
               <div className="grid sm:grid-cols-3 gap-6 mb-8">
                 <div className="text-center">
-                  <p className="text-4xl font-bold text-orange-500">52.5%</p>
-                  <p className="text-sm text-orange-600">Attrition Rate</p>
+                  <p className="text-4xl font-bold text-foreground">52.5%</p>
+                  <p className="text-sm text-foreground">Attrition Rate</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-4xl font-bold text-primary">3.2/10</p>
-                  <p className="text-sm text-primary">New Hire Confidence</p>
+                  <p className="text-4xl font-bold text-foreground">3.2/10</p>
+                  <p className="text-sm text-foreground">New Hire Confidence</p>
                 </div>
                 <div className="text-center">
                   <p className="text-4xl font-bold text-foreground">$9M</p>
-                  <p className="text-sm text-muted-foreground">Annual Waste</p>
+                  <p className="text-sm text-foreground">Annual Waste</p>
                 </div>
               </div>
 
