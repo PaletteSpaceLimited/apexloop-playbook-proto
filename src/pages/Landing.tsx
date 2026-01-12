@@ -657,62 +657,6 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Traditional vs ApexLoop Comparison */}
-      <section className="py-24 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-heading mb-4">
-              Traditional Coaching vs <span className="gradient-text">ApexLoop AI Coaching</span>
-            </h2>
-          </div>
-
-          <div className="bg-background rounded-2xl border border-border overflow-hidden">
-            <div className="grid md:grid-cols-3">
-              <div className="p-6 bg-muted">
-                <p className="text-sm font-bold text-menu-header uppercase tracking-widest mb-4">Challenge</p>
-              </div>
-              <div className="p-6 bg-red-50 dark:bg-red-950/20">
-                <p className="text-sm font-bold text-red-600 uppercase tracking-widest mb-4">Manager Roleplays</p>
-              </div>
-              <div className="p-6 bg-accent/5">
-                <p className="text-sm font-bold text-accent uppercase tracking-widest mb-4">ApexLoop AI</p>
-              </div>
-            </div>
-            
-            {[{
-            challenge: "Coach to Rep Ratio",
-            old: "1 manager : 8 reps",
-            new: "1 AI coach : ∞ reps"
-          }, {
-            challenge: "Practice Frequency",
-            old: "2-3 roleplays/month per rep",
-            new: "Unlimited practice calls"
-          }, {
-            challenge: "Feedback Quality",
-            old: "Generic feedback",
-            new: "Hyper-specific, timestamped insights"
-          }, {
-            challenge: "Manager Time",
-            old: "10-15 hrs/week",
-            new: "1-2 hrs/week"
-          }, {
-            challenge: "Ramp Time",
-            old: "6 month ramp time",
-            new: "2 month ramp time"
-          }].map((row, index) => <div key={row.challenge} className={`grid md:grid-cols-3 border-t border-border ${index % 2 === 0 ? 'bg-muted/30' : ''}`}>
-                <div className="p-6">
-                  <p className="font-medium text-heading">{row.challenge}</p>
-                </div>
-                <div className="p-6">
-                  <p className="text-body">{row.old}</p>
-                </div>
-                <div className="p-6">
-                  <p className="font-medium text-accent">{row.new}</p>
-                </div>
-              </div>)}
-          </div>
-        </div>
-      </section>
 
       {/* FAQ Section */}
       <section className="py-24 px-6 bg-section-light">
