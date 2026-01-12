@@ -39,7 +39,7 @@ const handler = async (req: Request): Promise<Response> => {
         Authorization: `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "ApexLoop Contact Form <onboarding@resend.dev>",
+        from: "ApexLoop Contact Form <noreply@palettespace.org>",
         to: ["juliusleung@palettespace.org"],
         subject: `New Demo Request from ${formData.name}`,
         html: `
