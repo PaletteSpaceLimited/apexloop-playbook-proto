@@ -170,30 +170,30 @@ export default function OnboardingCertifications() {
                   <div className="w-12 h-12 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center">
                     <Video className="w-6 h-6 text-orange-600" />
                   </div>
-                  <p className="font-medium text-orange-800 dark:text-orange-200">Watch videos</p>
+                  <p className="font-medium text-foreground">Watch videos</p>
                 </div>
-                <ArrowRight className="w-5 h-5 text-orange-400 hidden sm:block" />
+                <ArrowRight className="w-5 h-5 text-muted-foreground hidden sm:block" />
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center">
                     <FileText className="w-6 h-6 text-orange-600" />
                   </div>
-                  <p className="font-medium text-orange-800 dark:text-orange-200">Read scripts</p>
+                  <p className="font-medium text-foreground">Read scripts</p>
                 </div>
-                <ArrowRight className="w-5 h-5 text-orange-400 hidden sm:block" />
+                <ArrowRight className="w-5 h-5 text-muted-foreground hidden sm:block" />
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center">
                     <Eye className="w-6 h-6 text-orange-600" />
                   </div>
-                  <p className="font-medium text-orange-800 dark:text-orange-200">Shadow veterans</p>
+                  <p className="font-medium text-foreground">Shadow veterans</p>
                 </div>
-                <ArrowRight className="w-5 h-5 text-orange-400 hidden sm:block" />
+                <ArrowRight className="w-5 h-5 text-muted-foreground hidden sm:block" />
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center">
                     <Rocket className="w-6 h-6 text-orange-600" />
                   </div>
-                  <p className="font-medium text-orange-800 dark:text-orange-200">Go live</p>
+                  <p className="font-medium text-foreground">Go live</p>
                 </div>
-                <ArrowRight className="w-5 h-5 text-orange-400 hidden sm:block" />
+                <ArrowRight className="w-5 h-5 text-muted-foreground hidden sm:block" />
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-xl bg-red-100 dark:bg-red-900/30 flex items-center justify-center">
                     <AlertTriangle className="w-6 h-6 text-red-600" />
