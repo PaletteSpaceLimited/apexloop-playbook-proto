@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Zap, Bot, BarChart3, Target, ArrowRight, CheckCircle2, PlayCircle, Clock, TrendingDown, Users2, ChevronDown, ChevronUp, Quote, Twitter, Linkedin, Youtube, Headphones, MessageSquare, Award, Timer, DollarSign, UserX, RefreshCw, Globe, Mic, LineChart, Sparkles, MonitorPlay, Settings, BookOpen, Dumbbell, Skull, User } from "lucide-react";
+import { Zap, Bot, BarChart3, Target, ArrowRight, CheckCircle2, PlayCircle, Clock, TrendingDown, Users2, ChevronDown, ChevronUp, Quote, Twitter, Linkedin, Youtube, Headphones, MessageSquare, Award, Timer, DollarSign, UserX, RefreshCw, Globe, Mic, LineChart, Sparkles, MonitorPlay, Settings, BookOpen, Dumbbell, Skull, User, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import MegaMenuNavigation from "@/components/navigation/MegaMenuNavigation";
 import { useState } from "react";
@@ -309,6 +309,80 @@ export default function Landing() {
                 <p className="text-3xl md:text-4xl font-bold gradient-text">{stat.value}</p>
                 <p className="text-sm text-body mt-1">{stat.label}</p>
               </div>)}
+          </div>
+
+          {/* Demo Video Section */}
+          <div className="mt-16 max-w-5xl mx-auto">
+            <div className="flex justify-center gap-4 mb-8">
+              <div className="flex items-center gap-2 px-4 py-2 bg-background border-2 border-accent rounded-full text-accent font-medium">
+                <Mic className="w-4 h-4" />
+                AI Roleplays
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 bg-muted rounded-full text-body font-medium">
+                <BarChart3 className="w-4 h-4" />
+                AI Real Call Scoring
+              </div>
+            </div>
+            
+            <div className="relative bg-gradient-to-br from-cyan-50 to-blue-50 rounded-3xl p-8 border border-border overflow-hidden">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                {/* Left - Persona Card */}
+                <div className="bg-white rounded-2xl p-6 shadow-lg border border-border relative">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Book Rate 11.7%
+                  </div>
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center overflow-hidden">
+                    <Users2 className="w-10 h-10 text-white" />
+                  </div>
+                  <h4 className="text-lg font-bold text-heading text-center">Jordan Vega <span className="text-xs bg-accent text-white px-2 py-0.5 rounded-full ml-1">AI</span></h4>
+                  <p className="text-sm text-body text-center mb-4">CRO @ EchoFlow</p>
+                  <div className="flex justify-center gap-2 mb-4">
+                    <span className="text-xs px-3 py-1 border border-accent text-accent rounded-full">Discovery Call</span>
+                    <span className="text-xs px-3 py-1 border border-accent text-accent rounded-full">Nice</span>
+                  </div>
+                  <p className="text-sm text-body text-center mb-4">Best bot for practicing disco calls. Identify goals, address pain points, and evaluate compatibility effectively.</p>
+                  <Button className="w-full gradient-primary-bg text-white">
+                    <Phone className="w-4 h-4 mr-2" />
+                    Try it yourself
+                  </Button>
+                </div>
+                
+                {/* Right - Video Player Mockup */}
+                <div className="bg-slate-800 rounded-2xl overflow-hidden shadow-xl">
+                  <div className="aspect-video relative bg-gradient-to-br from-amber-200 to-yellow-300 flex items-center justify-center">
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:scale-105 transition-transform">
+                        <PlayCircle className="w-10 h-10 text-slate-800" />
+                      </div>
+                    </div>
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-slate-900/80 text-white px-4 py-2 rounded-full text-sm flex items-center gap-3">
+                      <span className="flex items-center gap-1">
+                        <Clock className="w-4 h-4" />
+                        1.5x
+                      </span>
+                      <span className="text-slate-400">8 min</span>
+                      <span className="text-yellow-400 font-bold flex items-center gap-1">
+                        <Zap className="w-4 h-4" />
+                        5 min 32 sec
+                      </span>
+                    </div>
+                  </div>
+                  <div className="bg-slate-900 px-4 py-3 flex items-center gap-2">
+                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div className="flex-1 h-1 bg-slate-700 rounded-full">
+                      <div className="w-1/3 h-full bg-accent rounded-full"></div>
+                    </div>
+                    <span className="text-xs text-slate-400">00:00</span>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Carousel Dots */}
+              <div className="flex justify-center gap-2 mt-6">
+                <div className="w-2 h-2 rounded-full bg-accent"></div>
+                <div className="w-2 h-2 rounded-full bg-slate-300"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
