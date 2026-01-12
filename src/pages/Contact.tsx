@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Zap, Mail, Phone, Building2, User, MessageSquare, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Zap, CheckCircle2, Snowflake, Flame, Lightbulb, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -10,18 +10,18 @@ import { toast } from "sonner";
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    name: "",
     email: "",
     phone: "",
+    jobTitle: "",
     company: "",
-    teamSize: "",
-    message: "",
+    employees: "",
+    source: "",
+    problem: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
     console.log("Form submitted:", formData);
     setIsSubmitted(true);
     toast.success("Thank you! We'll be in touch soon.");
@@ -55,153 +55,220 @@ export default function Contact() {
     );
   }
 
+  const features = [
+    {
+      title: "Customized around your methodology",
+      description: "Create roleplays around your talking points, training methodology, customer ICP, and more"
+    },
+    {
+      title: "Meet learners (and admins) where they are",
+      description: "Fits into your existing LMS, CMS or training portal. Seamless for admins and learners"
+    },
+    {
+      title: "Your InfoSec team will thank you",
+      description: "SOC 2 Type 2, GDPR compliant, data excluded from AI training models, user provisioning, and more"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       <MegaMenuNavigation />
 
-      {/* Hero Section */}
-      <section className="py-16 px-6 bg-gradient-to-b from-primary/5 to-background">
-        <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Book a <span className="text-primary">Demo</span>
+      {/* Header */}
+      <section className="py-12 px-6 bg-gradient-to-b from-primary/10 via-primary/5 to-background">
+        <div className="max-w-6xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground">
+            Talk to Sales
           </h1>
-          <p className="text-xl text-muted-foreground">
-            See how ApexLoop can transform your sales team's performance. Fill out the form below and we'll get back to you within 24 hours.
-          </p>
         </div>
       </section>
 
-      {/* Contact Form */}
+      {/* Main Content */}
       <section className="py-12 px-6">
-        <div className="max-w-2xl mx-auto">
-          <div className="bg-white rounded-2xl border border-border p-8 shadow-sm">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              {/* Name Row */}
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="firstName">First Name *</Label>
-                  <div className="relative">
-                    <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-                    <Input
-                      id="firstName"
-                      name="firstName"
-                      placeholder="John"
-                      className="pl-10"
-                      required
-                      value={formData.firstName}
-                      onChange={handleChange}
-                    />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="lastName">Last Name *</Label>
-                  <Input
-                    id="lastName"
-                    name="lastName"
-                    placeholder="Doe"
-                    required
-                    value={formData.lastName}
-                    onChange={handleChange}
-                  />
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
+          
+          {/* Left Column - Features */}
+          <div className="space-y-8">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-primary italic mb-3">
+                Interactive AI Roleplays for your team
+              </h2>
+              <p className="text-muted-foreground text-lg">
+                Leave your info and we'll be in touch shortly
+              </p>
+            </div>
+
+            {/* Feature Badges */}
+            <div className="flex flex-wrap gap-4">
+              <div className="bg-white border-2 border-primary/20 rounded-2xl px-5 py-3 shadow-md transform -rotate-3 hover:rotate-0 transition-transform">
+                <div className="flex items-center gap-2">
+                  <Snowflake className="w-5 h-5 text-primary" />
+                  <span className="font-semibold text-foreground">Cold call</span>
                 </div>
               </div>
+              <div className="bg-white border-2 border-orange-200 rounded-2xl px-5 py-3 shadow-md hover:scale-105 transition-transform">
+                <div className="flex items-center gap-2">
+                  <Flame className="w-5 h-5 text-orange-500" />
+                  <span className="font-semibold text-foreground">Inbound</span>
+                </div>
+              </div>
+              <div className="bg-white border-2 border-purple-200 rounded-2xl px-5 py-3 shadow-md transform rotate-2 hover:rotate-0 transition-transform">
+                <div className="flex items-center gap-2">
+                  <Lightbulb className="w-5 h-5 text-purple-500" />
+                  <span className="font-semibold text-foreground">Manager training</span>
+                </div>
+              </div>
+            </div>
 
-              {/* Email */}
+            {/* Feature List */}
+            <div className="space-y-6 pt-4">
+              {features.map((feature, index) => (
+                <div key={index} className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center">
+                      <CheckCircle2 className="w-5 h-5 text-primary" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-foreground text-lg">{feature.title}</h3>
+                    <p className="text-muted-foreground">{feature.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right Column - Form */}
+          <div className="bg-white rounded-2xl border border-border p-8 shadow-sm">
+            <form onSubmit={handleSubmit} className="space-y-5">
+              {/* Name */}
               <div className="space-y-2">
-                <Label htmlFor="email">Work Email *</Label>
-                <div className="relative">
-                  <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+                <Label htmlFor="name">Name<span className="text-red-500">*</span></Label>
+                <Input
+                  id="name"
+                  name="name"
+                  required
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="border-gray-300"
+                />
+              </div>
+
+              {/* Email & Phone Row */}
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label htmlFor="email">Work Email<span className="text-red-500">*</span></Label>
                   <Input
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="john@company.com"
-                    className="pl-10"
                     required
                     value={formData.email}
                     onChange={handleChange}
+                    className="border-gray-300"
                   />
                 </div>
-              </div>
-
-              {/* Phone */}
-              <div className="space-y-2">
-                <Label htmlFor="phone">Phone Number</Label>
-                <div className="relative">
-                  <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+                <div className="space-y-2">
+                  <Label htmlFor="phone">Phone #</Label>
                   <Input
                     id="phone"
                     name="phone"
                     type="tel"
-                    placeholder="+852 1234 5678"
-                    className="pl-10"
                     value={formData.phone}
                     onChange={handleChange}
+                    className="border-gray-300"
                   />
                 </div>
               </div>
 
-              {/* Company */}
-              <div className="space-y-2">
-                <Label htmlFor="company">Company Name *</Label>
-                <div className="relative">
-                  <Building2 className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+              {/* Job Title & Company Row */}
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label htmlFor="jobTitle">Job Title<span className="text-red-500">*</span></Label>
+                  <Input
+                    id="jobTitle"
+                    name="jobTitle"
+                    required
+                    value={formData.jobTitle}
+                    onChange={handleChange}
+                    className="border-gray-300"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="company">Company / Org<span className="text-red-500">*</span></Label>
                   <Input
                     id="company"
                     name="company"
-                    placeholder="Acme Inc."
-                    className="pl-10"
                     required
                     value={formData.company}
                     onChange={handleChange}
+                    className="border-gray-300"
                   />
                 </div>
               </div>
 
-              {/* Team Size */}
+              {/* Number of employees */}
               <div className="space-y-2">
-                <Label htmlFor="teamSize">Team Size</Label>
-                <select
-                  id="teamSize"
-                  name="teamSize"
-                  className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                  value={formData.teamSize}
-                  onChange={handleChange}
-                >
-                  <option value="">Select team size</option>
-                  <option value="1-10">1-10 employees</option>
-                  <option value="11-50">11-50 employees</option>
-                  <option value="51-200">51-200 employees</option>
-                  <option value="201-500">201-500 employees</option>
-                  <option value="500+">500+ employees</option>
-                </select>
-              </div>
-
-              {/* Message */}
-              <div className="space-y-2">
-                <Label htmlFor="message">How can we help you?</Label>
+                <Label htmlFor="employees">Number of employees<span className="text-red-500">*</span></Label>
                 <div className="relative">
-                  <MessageSquare className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
-                  <Textarea
-                    id="message"
-                    name="message"
-                    placeholder="Tell us about your sales training needs..."
-                    className="pl-10 min-h-[120px]"
-                    value={formData.message}
+                  <select
+                    id="employees"
+                    name="employees"
+                    required
+                    className="flex h-10 w-full rounded-md border border-gray-300 bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 appearance-none pr-10"
+                    value={formData.employees}
                     onChange={handleChange}
-                  />
+                  >
+                    <option value="">Select one</option>
+                    <option value="1-10">1-10</option>
+                    <option value="11-50">11-50</option>
+                    <option value="51-200">51-200</option>
+                    <option value="201-500">201-500</option>
+                    <option value="500+">500+</option>
+                  </select>
+                  <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-primary pointer-events-none" />
                 </div>
+              </div>
+
+              {/* Where did you hear about us */}
+              <div className="space-y-2">
+                <Label htmlFor="source">Where did you hear about us?</Label>
+                <div className="relative">
+                  <select
+                    id="source"
+                    name="source"
+                    className="flex h-10 w-full rounded-md border border-gray-300 bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 appearance-none pr-10"
+                    value={formData.source}
+                    onChange={handleChange}
+                  >
+                    <option value="">Select one</option>
+                    <option value="google">Google Search</option>
+                    <option value="linkedin">LinkedIn</option>
+                    <option value="referral">Referral</option>
+                    <option value="conference">Conference/Event</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-primary pointer-events-none" />
+                </div>
+              </div>
+
+              {/* Problem statement */}
+              <div className="space-y-2">
+                <Label htmlFor="problem">Problem statement</Label>
+                <Textarea
+                  id="problem"
+                  name="problem"
+                  placeholder="What problem are you trying to solve with ApexLoop?"
+                  className="min-h-[100px] border-gray-300"
+                  value={formData.problem}
+                  onChange={handleChange}
+                />
               </div>
 
               {/* Submit */}
-              <Button type="submit" size="lg" className="w-full gradient-primary-bg hover:opacity-90 text-primary-foreground">
-                Request Demo
-                <ArrowRight className="w-4 h-4 ml-2" />
+              <Button type="submit" className="bg-gray-500 hover:bg-gray-600 text-white px-8">
+                Submit
               </Button>
-
-              <p className="text-xs text-center text-muted-foreground">
-                By submitting this form, you agree to our Privacy Policy and Terms of Service.
-              </p>
             </form>
           </div>
         </div>
