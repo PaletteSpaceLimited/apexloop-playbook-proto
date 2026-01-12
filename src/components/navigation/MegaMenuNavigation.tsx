@@ -218,8 +218,8 @@ export default function MegaMenuNavigation() {
                   <NavigationMenuTrigger className="text-body hover:text-heading bg-transparent font-medium">
                     Resources
                   </NavigationMenuTrigger>
-                  <NavigationMenuContent className="right-0 left-auto">
-                    <div className="w-[420px] p-8">
+                  <NavigationMenuContent className="absolute right-0 left-auto">
+                    <div className="w-[280px] p-6">
                       <h4 className="text-xs font-bold uppercase tracking-widest text-menu-header mb-4">Resources</h4>
                       <ul className="space-y-1">
                         {resourceItems.map((item) => (
