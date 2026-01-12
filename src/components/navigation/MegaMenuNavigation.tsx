@@ -271,11 +271,11 @@ export default function MegaMenuNavigation() {
 
           {/* Right Actions */}
           <div className="hidden lg:flex items-center gap-2">
-            <a href="https://app.apexloopai.com/dashboard">
+            <Link to="/contact">
               <Button variant="ghost" size="sm" className="text-body hover:text-heading">
                 Book a demo
               </Button>
-            </a>
+            </Link>
             <a href="https://app.apexloopai.com/login">
               <Button variant="ghost" size="sm" className="text-body hover:text-heading">
                 Log in
