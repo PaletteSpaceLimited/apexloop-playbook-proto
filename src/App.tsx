@@ -19,6 +19,7 @@ import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 import Partners from "./pages/Partners";
 import InsuranceFinancialServices from "./pages/InsuranceFinancialServices";
+import CustomerSupportSuccessTeams from "./pages/CustomerSupportSuccessTeams";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,6 +43,7 @@ const App = () => (
           <Route path="/solutions/qa-deal-assessment" element={<QADealAssessment />} />
           <Route path="/solutions/public-speaking" element={<PublicSpeaking />} />
           <Route path="/solutions/insurance-financial-services" element={<InsuranceFinancialServices />} />
+          <Route path="/solutions/customer-support-success-teams" element={<CustomerSupportSuccessTeams />} />
           {/* Dedicated pages */}
           <Route path="/success-stories" element={<SuccessStories />} />
           <Route path="/pricing" element={<Pricing />} />
