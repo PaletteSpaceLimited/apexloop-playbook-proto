@@ -574,63 +574,6 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Case Study Section - Dark Background */}
-      <section className="py-24 px-6 bg-section-dark">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-sm font-bold text-cyan uppercase tracking-widest mb-4">Success Story</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-              Real Results with ApexLoop
-            </h2>
-          </div>
-
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 md:p-12 border border-gray-700">
-            <div className="grid lg:grid-cols-2 gap-12">
-              {/* Challenge Side */}
-              <div>
-                <span className="text-xs font-bold text-red-400 uppercase tracking-widest">The Challenge</span>
-                <h3 className="text-2xl font-bold text-primary-foreground mt-2 mb-4">{caseStudy.client}</h3>
-                <p className="text-primary-foreground/70 mb-6">{caseStudy.challenge}</p>
-                
-                <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-4 mb-8">
-                  <Quote className="w-6 h-6 text-red-400 mb-2" />
-                  <p className="text-primary-foreground italic">"{caseStudy.quote}"</p>
-                  <p className="text-sm text-primary-foreground/60 mt-2">— {caseStudy.quoteAuthor}</p>
-                </div>
-
-                <div className="grid grid-cols-2 gap-4">
-                  {caseStudy.resultsBefore.map(result => <div key={result.label} className="bg-gray-700/50 rounded-lg p-4">
-                      <p className="text-xs text-gray-400 mb-1">Before</p>
-                      <p className="text-xl font-bold text-red-400">{result.value}</p>
-                      <p className="text-xs text-gray-400 mt-1">{result.label}</p>
-                    </div>)}
-                </div>
-              </div>
-
-              {/* Results Side */}
-              <div>
-                <span className="text-xs font-bold text-green-400 uppercase tracking-widest">The Transformation</span>
-                <h3 className="text-2xl font-bold text-primary-foreground mt-2 mb-4">After ApexLoop Bootcamp</h3>
-                <p className="text-primary-foreground/70 mb-6">3-week AI roleplay bootcamp with 30 persona-based simulations, objection drills, and real-call QA.</p>
-                
-                <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-4 mb-8">
-                  <Quote className="w-6 h-6 text-green-400 mb-2" />
-                  <p className="text-primary-foreground italic">"{caseStudy.successQuote}"</p>
-                  <p className="text-sm text-primary-foreground/60 mt-2">— {caseStudy.successAuthor}</p>
-                </div>
-
-                <div className="grid grid-cols-2 gap-4">
-                  {caseStudy.resultsAfter.map(result => <div key={result.label} className="bg-gray-700/50 rounded-lg p-4">
-                      <p className="text-xs text-gray-400 mb-1">After</p>
-                      <p className="text-xl font-bold text-green-400">{result.value}</p>
-                      <p className="text-xs text-gray-400 mt-1">{result.label}</p>
-                    </div>)}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Industries Section */}
       <section className="py-24 px-6 bg-section-light">
