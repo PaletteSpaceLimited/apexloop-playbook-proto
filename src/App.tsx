@@ -12,6 +12,7 @@ import FeaturePage from "./pages/FeaturePage";
 import OnboardingCertifications from "./pages/OnboardingCertifications";
 import ChangeManagement from "./pages/ChangeManagement";
 import PreCallPrep from "./pages/PreCallPrep";
+import QADealAssessment from "./pages/QADealAssessment";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/solutions/onboarding-certifications" element={<OnboardingCertifications />} />
           <Route path="/solutions/change-management" element={<ChangeManagement />} />
           <Route path="/solutions/pre-call-prep" element={<PreCallPrep />} />
+          <Route path="/solutions/qa-deal-assessment" element={<QADealAssessment />} />
           {/* Dynamic feature pages */}
           <Route path="/solutions/:slug" element={<FeaturePage />} />
           <Route path="/resources/:slug" element={<FeaturePage />} />
