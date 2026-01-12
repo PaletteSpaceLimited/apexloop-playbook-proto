@@ -280,7 +280,7 @@ export default function OnboardingCertifications() {
                   <p className="text-2xl font-bold text-foreground">
                     <span>52.5%</span>
                     <span className="mx-2">→</span>
-                    <span>81%</span>
+                    <span className="text-orange-500">81%</span>
                   </p>
                   <p className="text-sm text-foreground">3-Month Retention</p>
                 </div>
@@ -288,7 +288,7 @@ export default function OnboardingCertifications() {
                   <p className="text-2xl font-bold text-foreground">
                     <span>5%</span>
                     <span className="mx-2">→</span>
-                    <span>13%</span>
+                    <span className="text-orange-500">13%</span>
                   </p>
                   <p className="text-sm text-foreground">First-month close rate</p>
                 </div>
@@ -296,12 +296,12 @@ export default function OnboardingCertifications() {
                   <p className="text-2xl font-bold text-foreground">
                     <span>3.2/10</span>
                     <span className="mx-2">→</span>
-                    <span>7.8/10</span>
+                    <span className="text-orange-500">7.8/10</span>
                   </p>
                   <p className="text-sm text-foreground">New-hire confidence</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-foreground">$5.2M</p>
+                  <p className="text-3xl font-bold text-orange-500">$5.2M</p>
                   <p className="text-sm text-foreground">Estimated annual savings</p>
                 </div>
               </div>
