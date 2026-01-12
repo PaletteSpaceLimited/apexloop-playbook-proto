@@ -402,8 +402,14 @@ export default function Landing() {
               </p>
             </div>
             <div className="hidden md:block">
-              <div className="w-20 h-20 rounded-full bg-slate-200 flex items-center justify-center">
-                <User className="w-10 h-10 text-slate-400" />
+              <div className="w-20 h-20 rounded-full bg-slate-100 flex items-center justify-center">
+                {/* Shrugging person icon */}
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="12" r="6" stroke="#94a3b8" strokeWidth="2.5" fill="none"/>
+                  <path d="M24 18v12M24 30l-6 10M24 30l6 10" stroke="#94a3b8" strokeWidth="2.5" strokeLinecap="round"/>
+                  <path d="M8 22c4-2 8-2 12 0M28 22c4-2 8-2 12 0" stroke="#94a3b8" strokeWidth="2.5" strokeLinecap="round"/>
+                  <path d="M6 18l2 4M42 18l-2 4" stroke="#94a3b8" strokeWidth="2.5" strokeLinecap="round"/>
+                </svg>
               </div>
             </div>
           </div>
