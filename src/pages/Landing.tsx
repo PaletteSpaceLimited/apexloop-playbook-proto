@@ -345,8 +345,8 @@ export default function Landing() {
                   <h4 className="text-lg font-bold text-heading text-center">Steve Brown <span className="text-xs bg-accent text-white px-2 py-0.5 rounded-full ml-1">AI</span></h4>
                   <p className="text-sm text-body text-center mb-4">VP of Sales Operations @ SummitWorks</p>
                   <div className="flex justify-center gap-2 mb-4">
-                    <span className="text-xs px-3 py-1 border border-accent text-accent rounded-full">Discovery Call</span>
-                    <span className="text-xs px-3 py-1 border border-accent text-accent rounded-full">Nice</span>
+                    <span className="text-xs px-3 py-1 border border-accent text-accent rounded-full">Cold Call</span>
+                    <span className="text-xs px-3 py-1 border border-accent text-accent rounded-full">High-Pressure</span>
                   </div>
                   <p className="text-sm text-body text-center mb-4">Best bot for practicing disco calls. Identify goals, address pain points, and evaluate compatibility effectively.</p>
                   <Button className="w-full gradient-primary-bg text-white">
