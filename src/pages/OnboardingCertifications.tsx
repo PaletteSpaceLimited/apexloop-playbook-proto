@@ -277,32 +277,32 @@ export default function OnboardingCertifications() {
             <div className="bg-background rounded-2xl p-8 border border-border mb-8">
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                 <div className="text-center">
-                  <p className="text-2xl font-bold">
-                    <span className="text-orange-500">52.5%</span>
+                  <p className="text-2xl font-bold text-foreground">
+                    <span>52.5%</span>
                     <span className="mx-2">→</span>
-                    <span className="text-green-600">81%</span>
+                    <span>81%</span>
                   </p>
-                  <p className="text-sm text-orange-600">3-Month Retention</p>
+                  <p className="text-sm text-foreground">3-Month Retention</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-2xl font-bold">
-                    <span className="text-orange-500">5%</span>
+                  <p className="text-2xl font-bold text-foreground">
+                    <span>5%</span>
                     <span className="mx-2">→</span>
-                    <span className="text-green-600">13%</span>
+                    <span>13%</span>
                   </p>
-                  <p className="text-sm text-orange-600">First-month close rate</p>
+                  <p className="text-sm text-foreground">First-month close rate</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-2xl font-bold">
-                    <span className="text-orange-500">3.2/10</span>
+                  <p className="text-2xl font-bold text-foreground">
+                    <span>3.2/10</span>
                     <span className="mx-2">→</span>
-                    <span className="text-green-600">7.8/10</span>
+                    <span>7.8/10</span>
                   </p>
-                  <p className="text-sm text-orange-600">New-hire confidence</p>
+                  <p className="text-sm text-foreground">New-hire confidence</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-primary">$5.2M</p>
-                  <p className="text-sm text-primary">Estimated annual savings</p>
+                  <p className="text-3xl font-bold text-foreground">$5.2M</p>
+                  <p className="text-sm text-foreground">Estimated annual savings</p>
                 </div>
               </div>
 
