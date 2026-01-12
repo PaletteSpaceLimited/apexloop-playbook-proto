@@ -1,7 +1,6 @@
 import MegaMenuNavigation from "@/components/navigation/MegaMenuNavigation";
 import { Link } from "react-router-dom";
 import { Twitter, Linkedin, Youtube } from "lucide-react";
-import mediaExposureImg from "@/assets/media-exposure.png";
 
 // Partner logos
 import hkstpLogo from "@/assets/partners/hkstp.png";
@@ -13,6 +12,16 @@ import itcLogo from "@/assets/partners/itc.png";
 import alibabaLogo from "@/assets/partners/alibaba.png";
 import hktdcLogo from "@/assets/partners/hktdc.png";
 
+// Media logos
+import hk01Logo from "@/assets/media/hk01.png";
+import hketLogo from "@/assets/media/hket.png";
+import hkcommercialLogo from "@/assets/media/hkcommercial.png";
+import yahooFinanceLogo from "@/assets/media/yahoo-finance.png";
+import hkejLogo from "@/assets/media/hkej.png";
+import singtaoLogo from "@/assets/media/singtao.png";
+import mingpaoLogo from "@/assets/media/mingpao.png";
+import takungpaoLogo from "@/assets/media/takungpao.png";
+
 const partnerLogos = [
   { src: hkstpLogo, alt: "HKSTP" },
   { src: cyberportLogo, alt: "Cyberport" },
@@ -22,6 +31,17 @@ const partnerLogos = [
   { src: itcLogo, alt: "Innovation and Technology Commission" },
   { src: alibabaLogo, alt: "Alibaba Entrepreneurs Fund" },
   { src: hktdcLogo, alt: "HKTDC" },
+];
+
+const mediaLogos = [
+  { src: hk01Logo, alt: "香港01" },
+  { src: hketLogo, alt: "香港經濟日報" },
+  { src: hkcommercialLogo, alt: "香港商報" },
+  { src: yahooFinanceLogo, alt: "Yahoo Finance" },
+  { src: hkejLogo, alt: "信報財經新聞" },
+  { src: singtaoLogo, alt: "星島日報" },
+  { src: mingpaoLogo, alt: "明報" },
+  { src: takungpaoLogo, alt: "大公報" },
 ];
 
 const footerLinks = {
@@ -96,12 +116,16 @@ export default function Partners() {
           <h2 className="text-3xl md:text-4xl font-bold text-heading text-center mb-12">
             MEDIA EXPOSURE
           </h2>
-          <div className="flex justify-center">
-            <img 
-              src={mediaExposureImg} 
-              alt="Media Exposure including 香港01, hket, 香港商報, Yahoo Finance, 信報, 星島日報, 明報, 大公報" 
-              className="max-w-full h-auto"
-            />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+            {mediaLogos.map((logo) => (
+              <div key={logo.alt} className="flex items-center justify-center p-4 bg-white rounded-xl hover:shadow-md transition-shadow">
+                <img 
+                  src={logo.src} 
+                  alt={logo.alt} 
+                  className="max-h-16 w-auto object-contain"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
