@@ -417,7 +417,7 @@ export default function Landing() {
       </section>
 
       {/* Our Philosophy + Key Features + ApexLoop System Section */}
-      <section className="py-24 px-6 bg-section-light">
+      <section className="py-24 pb-12 px-6 bg-section-light">
         <div className="max-w-6xl mx-auto">
           {/* Our Philosophy Header */}
           <div className="text-center mb-16">
