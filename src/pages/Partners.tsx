@@ -2,7 +2,27 @@ import MegaMenuNavigation from "@/components/navigation/MegaMenuNavigation";
 import { Link } from "react-router-dom";
 import { Twitter, Linkedin, Youtube } from "lucide-react";
 import mediaExposureImg from "@/assets/media-exposure.png";
-import partnersClientsImg from "@/assets/partners-clients.png";
+
+// Partner logos
+import hkstpLogo from "@/assets/partners/hkstp.png";
+import cyberportLogo from "@/assets/partners/cyberport.png";
+import awsLogo from "@/assets/partners/aws.png";
+import cityuLogo from "@/assets/partners/cityu.webp";
+import hktech300Logo from "@/assets/partners/hktech300.png";
+import itcLogo from "@/assets/partners/itc.png";
+import alibabaLogo from "@/assets/partners/alibaba.png";
+import hktdcLogo from "@/assets/partners/hktdc.png";
+
+const partnerLogos = [
+  { src: hkstpLogo, alt: "HKSTP" },
+  { src: cyberportLogo, alt: "Cyberport" },
+  { src: awsLogo, alt: "AWS" },
+  { src: cityuLogo, alt: "City University of Hong Kong" },
+  { src: hktech300Logo, alt: "HK TECH 300" },
+  { src: itcLogo, alt: "Innovation and Technology Commission" },
+  { src: alibabaLogo, alt: "Alibaba Entrepreneurs Fund" },
+  { src: hktdcLogo, alt: "HKTDC" },
+];
 
 const footerLinks = {
   product: [
@@ -56,12 +76,16 @@ export default function Partners() {
           <h2 className="text-3xl md:text-4xl font-bold text-heading text-center mb-12">
             OUR PARTNERS & CLIENTS
           </h2>
-          <div className="flex justify-center">
-            <img 
-              src={partnersClientsImg} 
-              alt="Our Partners and Clients including HKSTP, Cyberport, AWS, University of Hong Kong, HKDAS, Zhejiang University, CityU, HK TECH 300, EPFL, and more" 
-              className="max-w-full h-auto"
-            />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+            {partnerLogos.map((logo) => (
+              <div key={logo.alt} className="flex items-center justify-center p-4 bg-white rounded-xl hover:shadow-md transition-shadow">
+                <img 
+                  src={logo.src} 
+                  alt={logo.alt} 
+                  className="max-h-20 w-auto object-contain"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
