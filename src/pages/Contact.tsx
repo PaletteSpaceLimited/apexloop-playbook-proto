@@ -6,9 +6,11 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import MegaMenuNavigation from "@/components/navigation/MegaMenuNavigation";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -20,11 +22,28 @@ export default function Contact() {
     problem: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setIsSubmitted(true);
-    toast.success("Thank you! We'll be in touch soon.");
+    setIsLoading(true);
+    
+    try {
+      const { data, error } = await supabase.functions.invoke("send-contact-email", {
+        body: formData,
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      console.log("Form submitted successfully:", data);
+      setIsSubmitted(true);
+      toast.success("Thank you! We'll be in touch soon.");
+    } catch (error: any) {
+      console.error("Error submitting form:", error);
+      toast.error("Failed to submit form. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -266,8 +285,12 @@ export default function Contact() {
               </div>
 
               {/* Submit */}
-              <Button type="submit" className="bg-gray-500 hover:bg-gray-600 text-white px-8">
-                Submit
+              <Button 
+                type="submit" 
+                className="bg-gray-500 hover:bg-gray-600 text-white px-8"
+                disabled={isLoading}
+              >
+                {isLoading ? "Submitting..." : "Submit"}
               </Button>
             </form>
           </div>
