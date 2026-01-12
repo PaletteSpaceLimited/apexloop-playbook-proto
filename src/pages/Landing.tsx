@@ -333,7 +333,7 @@ export default function Landing() {
             <div>
               <p className="text-sm font-bold text-slate-500 uppercase tracking-widest mb-3">THE UNCOMFORTABLE TRUTH:</p>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-3">
-                We Train Sales Reps Like It's 1995
+                Most companies still train sales reps like it's 1995
               </h2>
               <p className="text-lg text-slate-600">
                 Imagine if we trained Olympic athletes this way...
