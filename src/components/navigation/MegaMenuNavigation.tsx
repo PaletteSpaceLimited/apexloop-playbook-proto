@@ -89,15 +89,15 @@ export default function MegaMenuNavigation() {
   return (
     <nav className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-16 items-center">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2 mr-10">
             <img src="/logo-s.png" alt="ApexLoop Logo" className="w-8 h-8 object-contain" />
             <span className="font-bold text-xl text-heading">ApexLoop</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center">
+          <div className="hidden lg:flex items-center flex-1">
             <NavigationMenu>
               <NavigationMenuList>
                 {/* Solutions Mega Menu */}
