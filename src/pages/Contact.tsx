@@ -66,7 +66,7 @@ export default function Contact() {
     },
     {
       title: "Your InfoSec team will thank you",
-      description: "SOC 2 Type 2, GDPR compliant, data excluded from AI training models, user provisioning, and more"
+      description: "Your InfoSec team will thank you — strong privacy controls, data excluded from model training, user provisioning, and more."
     }
   ];
 
