@@ -210,13 +210,16 @@ const industries = [{
 const footerLinks = {
   product: [{
     label: "AI Roleplays",
-    href: "/solutions/ai-sales-roleplays"
+    href: "https://app.apexloopai.com/dashboard",
+    external: true
   }, {
     label: "Call Scoring",
-    href: "/solutions/ai-real-call-scoring"
+    href: "https://app.apexloopai.com/dashboard",
+    external: true
   }, {
     label: "AI Coaching",
-    href: "/solutions/ai-coaching"
+    href: "https://app.apexloopai.com/dashboard",
+    external: true
   }, {
     label: "Integrations",
     href: "/solutions/integrations"
@@ -734,9 +737,15 @@ export default function Landing() {
               <h4 className="font-semibold text-primary-foreground mb-4">Product</h4>
               <ul className="space-y-3">
                 {footerLinks.product.map(link => <li key={link.label}>
-                    <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
-                      {link.label}
-                    </Link>
+                    {link.external ? (
+                      <a href={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link to={link.href} className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+                        {link.label}
+                      </Link>
+                    )}
                   </li>)}
               </ul>
             </div>
