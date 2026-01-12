@@ -24,6 +24,7 @@ import B2BSaasItSolutionProviders from "./pages/B2BSaasItSolutionProviders";
 import EducationTrainingProviders from "./pages/EducationTrainingProviders";
 import RecruitmentTalentConsultingFirms from "./pages/RecruitmentTalentConsultingFirms";
 import PublicSectorNgos from "./pages/PublicSectorNgos";
+import OtherClientFacingIndustries from "./pages/OtherClientFacingIndustries";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -52,6 +53,7 @@ const App = () => (
           <Route path="/solutions/education-training-providers" element={<EducationTrainingProviders />} />
           <Route path="/solutions/recruitment-talent-consulting-firms" element={<RecruitmentTalentConsultingFirms />} />
           <Route path="/solutions/public-sector-ngos" element={<PublicSectorNgos />} />
+          <Route path="/solutions/other-client-facing-industries" element={<OtherClientFacingIndustries />} />
           {/* Dedicated pages */}
           <Route path="/success-stories" element={<SuccessStories />} />
           <Route path="/pricing" element={<Pricing />} />
