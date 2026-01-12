@@ -109,7 +109,7 @@ export default function OnboardingCertifications() {
         <div className="max-w-6xl mx-auto">
           <div className="mb-8">
             <h2 className="text-2xl md:text-3xl font-bold text-primary mb-2">
-              Scenario 1: New Hire Onboarding & Pre-Launch Certification
+              Scenario: New Hire Onboarding & Pre-Launch Certification
             </h2>
             <p className="text-lg text-muted-foreground">
               Don't Embarrass Yourself on Call #1: From "Learning by Failing" to "Launch After Practice"
