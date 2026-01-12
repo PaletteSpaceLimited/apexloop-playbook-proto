@@ -78,17 +78,6 @@ export default function Partners() {
     <div className="min-h-screen bg-background">
       <MegaMenuNavigation />
 
-      {/* Hero Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-heading mb-6">
-            Our Partners & Media
-          </h1>
-          <p className="text-lg text-body max-w-2xl mx-auto">
-            Trusted by leading organizations and featured in major media outlets across Asia Pacific.
-          </p>
-        </div>
-      </section>
 
       {/* Partners & Clients Section */}
       <section className="py-16 px-6 bg-white">
