@@ -118,8 +118,8 @@ export default function MegaMenuNavigation() {
                     Solutions
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <div className="w-[950px] p-8">
-                      <div className="grid grid-cols-4 gap-12">
+                    <div className="w-[1150px] p-8">
+                      <div className="grid grid-cols-4 gap-8">
                         {/* Column 1: Product */}
                         <div>
                           <h4 className="text-xs font-bold uppercase tracking-widest text-menu-header mb-4">Product</h4>
@@ -159,9 +159,9 @@ export default function MegaMenuNavigation() {
                                 <NavigationMenuLink asChild>
                                   <Link
                                     to={`/solutions/${item.slug}`}
-                                    className="flex items-center gap-3 py-2 rounded-md hover:bg-muted transition-colors group"
+                                    className="flex items-center gap-3 py-2 rounded-md hover:bg-muted transition-colors group whitespace-nowrap"
                                   >
-                                    <item.icon className="w-4 h-4 text-menu-header group-hover:text-accent" />
+                                    <item.icon className="w-4 h-4 text-menu-header group-hover:text-accent shrink-0" />
                                     <span className="text-sm font-medium text-body group-hover:text-accent">{item.title}</span>
                                   </Link>
                                 </NavigationMenuLink>
@@ -179,9 +179,9 @@ export default function MegaMenuNavigation() {
                                 <NavigationMenuLink asChild>
                                   <Link
                                     to={`/solutions/${item.slug}`}
-                                    className="flex items-center gap-3 py-2 rounded-md hover:bg-muted transition-colors group"
+                                    className="flex items-center gap-3 py-2 rounded-md hover:bg-muted transition-colors group whitespace-nowrap"
                                   >
-                                    <item.icon className="w-4 h-4 text-menu-header group-hover:text-accent" />
+                                    <item.icon className="w-4 h-4 text-menu-header group-hover:text-accent shrink-0" />
                                     <span className="text-sm font-medium text-body group-hover:text-accent">{item.title}</span>
                                   </Link>
                                 </NavigationMenuLink>
