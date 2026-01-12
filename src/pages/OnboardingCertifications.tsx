@@ -227,7 +227,7 @@ export default function OnboardingCertifications() {
         <div className="max-w-6xl mx-auto">
           {/* The Challenge */}
           <div className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-orange-500 mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
               The Challenge: New Agents Burning Out Before They Ramp
             </h2>
             <p className="text-muted-foreground mb-6">
