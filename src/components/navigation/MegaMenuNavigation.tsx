@@ -254,17 +254,6 @@ export default function MegaMenuNavigation() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
 
-                <NavigationMenuItem>
-                  <Link to="/enterprise" className="px-4 py-2 text-sm font-medium text-body hover:text-accent transition-colors">
-                    Enterprise
-                  </Link>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                  <Link to="/careers" className="px-4 py-2 text-sm font-medium text-body hover:text-accent transition-colors">
-                    Careers
-                  </Link>
-                </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
           </div>
@@ -325,12 +314,6 @@ export default function MegaMenuNavigation() {
               </Link>
               <Link to="/success-stories" className="block py-2 text-sm font-medium text-body hover:text-accent" onClick={() => setMobileOpen(false)}>
                 Success Stories
-              </Link>
-              <Link to="/enterprise" className="block py-2 text-sm font-medium text-body hover:text-accent" onClick={() => setMobileOpen(false)}>
-                Enterprise
-              </Link>
-              <Link to="/careers" className="block py-2 text-sm font-medium text-body hover:text-accent" onClick={() => setMobileOpen(false)}>
-                Careers
               </Link>
             </div>
             <div className="pt-4 border-t border-border space-y-2">
