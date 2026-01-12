@@ -234,7 +234,7 @@ export default function OnboardingCertifications() {
               Client: Hong Kong life insurance company · 50+ new agents/month · 3-month probation
             </p>
 
-            <div className="bg-sky-50 dark:bg-sky-950/20 rounded-2xl p-8 border border-sky-200 dark:border-sky-800">
+            <div className="bg-background rounded-2xl p-8 border border-border">
               <p className="text-xl font-bold text-foreground mb-6 text-center">
                 "50 new hires join, only 32 remain after 3 months"
               </p>
@@ -274,7 +274,7 @@ export default function OnboardingCertifications() {
               The Breakthrough: ApexLoop Insurance Bootcamp
             </h2>
 
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-950/30 dark:to-orange-900/20 rounded-2xl p-8 border border-orange-200 dark:border-orange-800 mb-8">
+            <div className="bg-background rounded-2xl p-8 border border-border mb-8">
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                 <div className="text-center">
                   <p className="text-2xl font-bold">
