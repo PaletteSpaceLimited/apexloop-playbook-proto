@@ -3,14 +3,12 @@ import { Button } from "@/components/ui/button";
 import MegaMenuNavigation from "@/components/navigation/MegaMenuNavigation";
 
 const freeFeatures = [
-  "9 Free AI Roleplay Bots, Limited to Cold, Warm, & Discovery Calls",
+  "6 Free AI Roleplay Bots, Limited to Cold, Warm, & Discovery Calls",
   "Video Calls",
-  "Pre-Built Default AI Scorecards",
   "Full Transcription of Calls",
   "AI Coaching Feedback",
   "Objection & Question Detection",
   "Unlimited Call Time",
-  "Download & Share Calls",
   "Call History for your Company",
 ];
 
