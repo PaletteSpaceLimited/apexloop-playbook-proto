@@ -54,7 +54,7 @@ const useCaseItems = [
   { title: "Change Management", slug: "change-management", icon: RefreshCcw },
   { title: "Pre-Call Prep", slug: "pre-call-prep", icon: Phone },
   { title: "QA & Deal Assessment", slug: "qa-deal-assessment", icon: Search },
-  { title: "Public Speaking", slug: "public-speaking", icon: Mic },
+  { title: "Public Communication", slug: "public-speaking", icon: Mic },
 ];
 
 const industryItems = [

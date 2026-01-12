@@ -27,7 +27,7 @@ export default function PublicSpeaking() {
       <section className="py-20 px-6 bg-gradient-to-br from-purple-50 to-background">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
-            Public Speaking <span className="text-purple-500">Readiness</span>
+            Public Communication <span className="text-purple-500">Readiness</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-4xl">
