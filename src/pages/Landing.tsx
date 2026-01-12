@@ -416,44 +416,111 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* 5 Challenges Section - Blue Gradient Background */}
-      <section className="py-24 px-6 gradient-primary-bg">
+      {/* Our Philosophy + Key Features + ApexLoop System Section */}
+      <section className="py-24 px-6 bg-section-light">
         <div className="max-w-6xl mx-auto">
+          {/* Our Philosophy Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-              Leading a Sales Team is Hard.
-              <br />
-              Scaling it? <span className="opacity-80">Even Harder.</span>
+            <h2 className="text-3xl md:text-4xl font-black text-slate-800 uppercase tracking-wide mb-2">
+              OUR PHILOSOPHY
             </h2>
-            <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-              "It takes four, or five, six months to ramp a salesperson. When you start scaling, the math starts to matter."
-              <span className="block mt-2 text-sm italic">— Mark Roberge, CRO @ HubSpot</span>
+            <p className="text-lg font-bold text-orange-500 uppercase tracking-wide">
+              Train Sales Reps Like Elite Athletes
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {challenges.map(item => <div key={item.title} className="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl p-6 border border-primary-foreground/20">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-primary-foreground/20 flex items-center justify-center">
-                    <item.icon className="w-6 h-6 text-primary-foreground" />
-                  </div>
-                  <span className="text-sm font-bold text-primary-foreground/60">{item.number}</span>
+          {/* Philosophy Cards */}
+          <div className="grid md:grid-cols-2 gap-8 mb-20">
+            {/* Elite Athletes Card */}
+            <div className="bg-white rounded-xl p-8 border-2 border-slate-200 shadow-sm">
+              <h3 className="text-xl font-bold text-slate-800 italic mb-4">
+                Elite Athletes Don't Just "Do Their Job" to Improve
+              </h3>
+              <p className="text-slate-600 mb-4">They:</p>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 shrink-0" />
+                  <span className="text-slate-700">Practice specific skills repeatedly</span>
                 </div>
-                <h3 className="text-lg font-semibold text-primary-foreground mb-2">{item.title}</h3>
-                <p className="text-2xl font-bold text-primary-foreground mb-2">{item.stat}</p>
-                <p className="text-sm text-primary-foreground/70">{item.description}</p>
-              </div>)}
-            {/* Total Cost Card */}
-            <div className="bg-red-500/20 backdrop-blur-sm rounded-2xl p-6 border border-red-300/30">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 rounded-xl bg-red-500/30 flex items-center justify-center">
-                  <DollarSign className="w-6 h-6 text-primary-foreground" />
+                <div className="flex items-center gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 shrink-0" />
+                  <span className="text-slate-700">Get immediate, expert feedback</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 shrink-0" />
+                  <span className="text-slate-700">Train in realistic but low-stakes environments</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 shrink-0" />
+                  <span className="text-slate-700">Build muscle memory through repetition</span>
                 </div>
               </div>
-              <h3 className="text-lg font-semibold text-primary-foreground mb-2">Total Annual Cost</h3>
-              <p className="text-3xl font-bold text-primary-foreground mb-2">$5.18M</p>
-              <p className="text-sm text-primary-foreground/70">In lost performance and inefficiency</p>
             </div>
+
+            {/* Sales Reps Card */}
+            <div className="bg-white rounded-xl p-8 border-2 border-slate-200 shadow-sm">
+              <h3 className="text-xl font-bold text-slate-800 mb-4">
+                Sales Reps Should Train the Same Way
+              </h3>
+              <p className="text-slate-600 mb-4">ApexLoop provides:</p>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-orange-500 shrink-0" />
+                  <span className="text-slate-700">Unlimited AI roleplay = <span className="font-semibold">Repetitive practice</span></span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-orange-500 shrink-0" />
+                  <span className="text-slate-700">Instant AI feedback = <span className="font-semibold">Expert coaching</span></span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-orange-500 shrink-0" />
+                  <span className="text-slate-700">Real scenarios, zero risk = <span className="font-semibold">Safe training environment</span></span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-orange-500 shrink-0" />
+                  <span className="text-slate-700">Data-driven insights = <span className="font-semibold">Measurable progress</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Key Features Header */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-black text-blue-800 uppercase tracking-wide mb-2">
+              KEY FEATURES
+            </h2>
+            <p className="text-lg font-bold text-orange-500 uppercase tracking-wide">
+              Turn Calls Into Coaching Moments
+            </p>
+          </div>
+
+          {/* Key Features List */}
+          <div className="space-y-4 max-w-2xl mx-auto mb-20">
+            <div className="bg-orange-500 text-white font-bold text-lg py-4 px-8 rounded-lg text-center shadow-md">
+              Real-time Voice Roleplays
+            </div>
+            <div className="bg-white text-orange-500 font-bold text-lg py-4 px-8 rounded-lg text-center border-2 border-orange-200 shadow-sm">
+              Multilingual Support
+            </div>
+            <div className="bg-orange-500 text-white font-bold text-lg py-4 px-8 rounded-lg text-center shadow-md">
+              High-fidelity Customer Personas
+            </div>
+            <div className="bg-white text-orange-500 font-bold text-lg py-4 px-8 rounded-lg text-center border-2 border-orange-200 shadow-sm">
+              Conversation Quality Scoring
+            </div>
+            <div className="bg-orange-500 text-white font-bold text-lg py-4 px-8 rounded-lg text-center shadow-md">
+              Objection Handling & Key Talk Tracks
+            </div>
+          </div>
+
+          {/* ApexLoop System Header */}
+          <div className="text-center">
+            <h2 className="text-2xl md:text-3xl font-black text-slate-800 uppercase tracking-wide mb-2">
+              THE APEXLOOP SYSTEM: Complete Sales Training Ecosystem
+            </h2>
+            <p className="text-lg font-bold text-orange-500">
+              Just like sports teams have practice facilities, game tape analysis, and coaching staff
+            </p>
           </div>
         </div>
       </section>
