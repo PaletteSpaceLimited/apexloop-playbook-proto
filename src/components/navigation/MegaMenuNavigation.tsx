@@ -219,25 +219,23 @@ export default function MegaMenuNavigation() {
                     Resources
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <div className="w-[750px] p-8">
-                      <div className="grid grid-cols-2 gap-6">
+                    <div className="w-[420px] p-8">
+                      <h4 className="text-xs font-bold uppercase tracking-widest text-menu-header mb-4">Resources</h4>
+                      <ul className="space-y-1">
                         {resourceItems.map((item) => (
-                          <NavigationMenuLink key={item.slug} asChild>
-                            <Link
-                              to={`/resources/${item.slug}`}
-                              className="flex items-start gap-4 p-4 rounded-xl hover:bg-muted transition-colors group"
-                            >
-                              <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
-                                <item.icon className="w-6 h-6 text-accent" />
-                              </div>
-                              <div>
-                                <h4 className="text-sm font-semibold text-heading group-hover:text-accent mb-1">{item.title}</h4>
-                                <p className="text-xs text-body">{item.description}</p>
-                              </div>
-                            </Link>
-                          </NavigationMenuLink>
+                          <li key={item.slug}>
+                            <NavigationMenuLink asChild>
+                              <Link
+                                to={`/resources/${item.slug}`}
+                                className="flex items-center gap-3 py-2 rounded-md hover:bg-muted transition-colors group"
+                              >
+                                <item.icon className="w-4 h-4 text-menu-header group-hover:text-accent" />
+                                <span className="text-sm font-medium text-body group-hover:text-accent">{item.title}</span>
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
                         ))}
-                      </div>
+                      </ul>
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
