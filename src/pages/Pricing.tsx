@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle2, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import MegaMenuNavigation from "@/components/navigation/MegaMenuNavigation";
@@ -56,11 +57,11 @@ export default function Pricing() {
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </a>
-            <a href="https://app.apexloopai.com/dashboard">
+            <Link to="/contact">
               <Button size="lg" variant="outline">
                 Book a demo
               </Button>
-            </a>
+            </Link>
           </div>
 
           <p className="text-sm text-muted-foreground">
@@ -97,11 +98,11 @@ export default function Pricing() {
             <div className="bg-white rounded-2xl border border-border p-8 shadow-sm">
               <h2 className="text-3xl font-bold text-foreground mb-6">Custom</h2>
               
-              <a href="https://app.apexloopai.com/dashboard" className="block mb-8">
+              <Link to="/contact" className="block mb-8">
                 <Button className="w-full bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-600 hover:to-teal-600 text-white" size="lg">
                   Book a demo
                 </Button>
-              </a>
+              </Link>
 
               <ul className="space-y-4">
                 {customFeatures.map((feature, idx) => (
