@@ -21,6 +21,7 @@ import Partners from "./pages/Partners";
 import InsuranceFinancialServices from "./pages/InsuranceFinancialServices";
 import CustomerSupportSuccessTeams from "./pages/CustomerSupportSuccessTeams";
 import B2BSaasItSolutionProviders from "./pages/B2BSaasItSolutionProviders";
+import EducationTrainingProviders from "./pages/EducationTrainingProviders";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -46,6 +47,7 @@ const App = () => (
           <Route path="/solutions/insurance-financial-services" element={<InsuranceFinancialServices />} />
           <Route path="/solutions/customer-support-success-teams" element={<CustomerSupportSuccessTeams />} />
           <Route path="/solutions/b2b-saas-it-solution-providers" element={<B2BSaasItSolutionProviders />} />
+          <Route path="/solutions/education-training-providers" element={<EducationTrainingProviders />} />
           {/* Dedicated pages */}
           <Route path="/success-stories" element={<SuccessStories />} />
           <Route path="/pricing" element={<Pricing />} />
