@@ -45,7 +45,7 @@ import { useState } from "react";
 const productItems = [
   { title: "AI Sales Roleplays", slug: "ai-sales-roleplays", icon: Bot, description: "Practice with AI buyers", externalUrl: "https://app.apexloopai.com/dashboard" },
   { title: "AI Real Call Scoring", slug: "ai-real-call-scoring", icon: BarChart3, description: "Score your actual calls", externalUrl: "https://app.apexloopai.com/dashboard/history" },
-  { title: "AI Coaching", slug: "ai-coaching", icon: MessageSquare, description: "Personalized AI coaching" },
+  { title: "AI Coaching", slug: "ai-coaching", icon: MessageSquare, description: "Personalized AI coaching", externalUrl: "https://app.apexloopai.com" },
   { title: "AI Post-Sales Roleplays", slug: "ai-post-sales-roleplays", icon: HeadphonesIcon, description: "Customer success training" },
 ];
 
