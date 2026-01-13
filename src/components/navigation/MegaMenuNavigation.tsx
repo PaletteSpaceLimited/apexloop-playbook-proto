@@ -213,32 +213,31 @@ export default function MegaMenuNavigation() {
                   </Link>
                 </NavigationMenuItem>
 
-                {/* Resources Mega Menu */}
-                <NavigationMenuItem className="relative">
-                  <NavigationMenuTrigger className="text-body hover:text-heading bg-transparent font-medium">
+                {/* Resources Dropdown - Using custom positioning */}
+                <li className="relative group">
+                  <button className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-body hover:text-heading bg-transparent transition-colors">
                     Resources
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent className="!left-0 !translate-x-0">
-                    <div className="w-[280px] p-6">
-                      <h4 className="text-xs font-bold uppercase tracking-widest text-menu-header mb-4">Resources</h4>
-                      <ul className="space-y-1">
-                        {resourceItems.map((item) => (
-                          <li key={item.slug}>
-                            <NavigationMenuLink asChild>
-                              <Link
-                                to={`/resources/${item.slug}`}
-                                className="flex items-center gap-3 py-2 rounded-md hover:bg-muted transition-colors group"
-                              >
-                                <item.icon className="w-4 h-4 text-menu-header group-hover:text-accent" />
-                                <span className="text-sm font-medium text-body group-hover:text-accent">{item.title}</span>
-                              </Link>
-                            </NavigationMenuLink>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
+                    <svg className="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div className="absolute left-0 top-full mt-1.5 w-[280px] p-6 bg-popover border rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
+                    <h4 className="text-xs font-bold uppercase tracking-widest text-menu-header mb-4">Resources</h4>
+                    <ul className="space-y-1">
+                      {resourceItems.map((item) => (
+                        <li key={item.slug}>
+                          <Link
+                            to={`/resources/${item.slug}`}
+                            className="flex items-center gap-3 py-2 rounded-md hover:bg-muted transition-colors group/item"
+                          >
+                            <item.icon className="w-4 h-4 text-menu-header group-hover/item:text-accent" />
+                            <span className="text-sm font-medium text-body group-hover/item:text-accent">{item.title}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </li>
 
               </NavigationMenuList>
             </NavigationMenu>
