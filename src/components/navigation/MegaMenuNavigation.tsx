@@ -218,7 +218,7 @@ export default function MegaMenuNavigation() {
 
             {/* Resources Dropdown - Separate from NavigationMenu to prevent conflicts */}
             <div className="relative group/resources">
-              <button className="group/btn inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium text-body transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none">
+              <button className="group/btn inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium text-body transition-colors hover:bg-[hsl(215,80%,80%)] hover:text-accent-foreground focus:bg-[hsl(215,80%,80%)] focus:text-accent-foreground focus:outline-none">
                 Resources
                 <svg className="relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-hover/resources:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
